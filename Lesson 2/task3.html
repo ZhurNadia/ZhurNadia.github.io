@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Формы</title>
+</head>
+<body>
+    <form>
+        <label>Name<br>
+            <input type="text" placeholder="name" name="name">
+        </label><br>
+        <label>Email<br>
+            <input type="email" placeholder="email" name="email">
+        </label><br><br>
+        <label>Sex<br>
+            <input type="radio" name="sex" value="man">Male
+            <input type="radio" name="sex" value="woman">Female
+        </label><br><br>
+        <label>Current status<br>
+            <input type="checkbox" name="status" value="student">Student<br>
+            <input type="checkbox" name="status" value="employed">Employed<br>
+            <input type="checkbox" name="status" value="unemployed">Unemployed<br>
+        </label><br>
+        <label>Month and year of birth<br>
+            <select name="month" size="1">
+                <option value="Jan" selected>January
+                <option value="Feb">February
+                <option value="Mar">March
+                <option value="Apr">April
+            </select>
+            <select name="yeat" size="1">
+                <option value="1984" selected>1984
+                <option value="1985">1985
+                <option value="1986">1986
+                <option value="1987">1987
+            </select>
+        </label><br><br>
+        <label>Skills and Technologies<br>
+            <select name="skills&tech" size="8" multiple>
+                <optgroup label="Tech skills">
+                    <option value="1">HTML</option>
+                    <option value="2">CSS</option>
+                    <option value="3">JavaScript</option>
+                    <option value="4">git</option>
+                </optgroup>
+                <optgroup label="Soft skills">
+                    <option value="5">Time management</option>
+                    <option value="6">Proactivity</option>
+                    <option value="7">Teamwork</option>
+                    <option value="8">Leadership</option>
+                </optgroup>
+            </select>
+        </label><br><br>
+        <label>Photo<br>
+            <input type="file" name="photo">
+        </label><br><br>
+        Comments<br>
+        <textarea name="comments" cols="30" rows="5" placeholder="Enter your comments" maxlength="200" wrap="soft"></textarea>
+        <br><br>
+        <button name="save" type="submit">Save</button>
+    </form>
+    <p>More about HTML FORMS: <a href="http://www.w3schools.com/html/html_forms.asp" target="_blank">W3</a>
+        <a href="http://www.site-do.ru/html/html11.php#7" target="_blank">site-do(Rus)</a> </p>
+</body>
+</html>
