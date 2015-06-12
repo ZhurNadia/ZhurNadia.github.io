@@ -1,0 +1,58 @@
+h1 {
+    color: #ffa600;
+    font-size: 34px;
+    font-weight: bold;
+    text-align: right;
+}
+p:first-letter {
+    font-size: 250%;
+    color: red;
+}
+p {
+    display: inline-block; /* для отображения first-letter в Firefox */
+}
+p em {
+    background: green;
+    color: white;
+    font-weight: bold;
+}
+
+#allotment h2 {
+    color: #ffa600;
+    font-size: 24px;
+    font-weight: bold;
+}
+.plants-list ul li {
+    font-size: 16px;
+    font-weight: bold;
+}
+#allotment .fruits-list {
+    color: grey;
+}
+.vegetables-list {
+    color: red;
+}
+#warehouse h2 {
+    color: #0000ff;
+    font-size: 24px;
+    font-weight: bold;
+}
+#warehouse .fruits-list {
+    color: #008100;
+}
+
+thead {
+    font-weight: bold;
+    text-align: center;
+}
+tbody td:nth-of-type(1){
+    color: #ffa600;
+    background: white;
+    text-align: left;
+}
+tbody {
+    background: #008100;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
