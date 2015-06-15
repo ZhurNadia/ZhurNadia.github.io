@@ -1,0 +1,13 @@
+body {
+    width: 900px;
+    align-content: center;
+}
+span {
+    font-size: 120%;
+    color: #fff;
+    display: inline-block;
+    padding: ;
+    margin: 10px;
+    vertical-align: middle;
+    background: #a64dff;
+}
