@@ -1,0 +1,14 @@
+a {
+    font-size: 200%;
+}
+a[href*="http"] {
+    color: #f70;
+}
+a[href*="googl"] {
+    color: #666;
+}
+a:after {
+    content: "?";
+    position: absolute;
+    text-decoration: none;
+}
