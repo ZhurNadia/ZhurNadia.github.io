@@ -53,7 +53,7 @@ label[for="blue"] {
 }
 
 /*как настроить чтоб при нажатом label его надпись становилась полупрозрачной?? */
-label[for="red"]:checked {
+input:checked + label {
     opacity: 0.5;
 }
 label[for="green"]:checked {
