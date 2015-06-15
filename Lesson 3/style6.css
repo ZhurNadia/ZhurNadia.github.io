@@ -1,0 +1,65 @@
+span {
+    margin: 1px 3px;
+}
+.red {
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding: 1px 7px 3px;
+    border-radius: 10px;
+}
+.green {
+    background: green;
+    color: white;
+    font-weight: bold;
+    padding: 1px 7px 3px;
+    border-radius: 10px;
+}
+.blue {
+    background: blue;
+    color: white;
+    font-weight: bold;
+    padding: 1px 7px 3px;
+    border-radius: 10px;
+}
+input[type="checkbox"] {
+    display: none;
+}
+
+label[for="red"] {
+    margin: 1px 6px;
+    color: red;
+    text-decoration: underline;
+}
+label[for="green"] {
+    margin: 1px 6px;
+    color: green;
+    text-decoration: underline;
+}
+label[for="blue"] {
+    margin: 1px 6px;
+    color: blue;
+    text-decoration: underline;
+}
+
+#red:checked ~.red {
+    display: none;
+}
+#green:checked ~.green {
+    display: none;
+}
+#blue:checked ~.blue {
+    display: none;
+}
+
+/*как настроить чтоб при нажатом label его надпись становилась полупрозрачной?? */
+label[for="red"]:checked {
+    opacity: 0.5;
+}
+label[for="green"]:checked {
+    opacity: 0.5;
+}
+label[for="blue"]:checked {
+    opacity: 0.5;
+}
+

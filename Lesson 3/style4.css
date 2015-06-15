@@ -7,8 +7,8 @@ a[href*="http"] {
 a[href*="googl"] {
     color: #666;
 }
-a:after {
-    content: "?";
+a[target="_blank"]:after {
+    content: "\21F1";
     position: absolute;
     text-decoration: none;
 }
