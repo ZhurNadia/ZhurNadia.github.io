@@ -2,7 +2,7 @@ body {
     width: 900px;
     align-content: center;
 }
-span {
+ul {
     font-size: 120%;
     color: #fff;
     display: inline-block;
@@ -10,4 +10,21 @@ span {
     margin: 10px;
     vertical-align: middle;
     background: #a64dff;
+    font: Impact;
+}
+ul li {
+    float: left;
+    list-style-position: inside;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+}
+ul li a {
+    display: block;
+    padding: 10px 15px;
+}
+a:hover {
+    background: white;
+    color: ;
 }
