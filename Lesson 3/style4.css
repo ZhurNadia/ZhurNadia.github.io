@@ -11,4 +11,6 @@ a[target="_blank"]:after {
     content: "\21F1";
     position: absolute;
     text-decoration: none;
+    font-family: Cambira serif;
+    -webkit-transform: rotate(90deg);
 }
