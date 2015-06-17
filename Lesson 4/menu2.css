@@ -1,7 +1,50 @@
+body {
+    margin: 0;
+}
+ul {
+    float: left;
+    text-align: center;
+    padding: 0 50px;
+    margin: 0;
+    vertical-align: middle;
+    background: #a64dff;
+    font: 110% Impact;
+    width: 900px;
+}
+
 ul li {
-    float: right;
+    float: left;
     list-style-position: inside;
+    list-style-type: none;
     text-transform: uppercase;
-    cursor: ;
-    margin: ;
+    cursor: pointer;
+    margin: 0;
+}
+/* div {
+    list-style-position: inside;
+    list-style-type: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0;
+}
+#more {
+    float: right;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+}
+*/
+li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+}
+
+a:hover {
+    background: #eeeeee;
+    color: #a1a1a1;
+    position: relative;
+    top: 2px;
 }
