@@ -1,19 +1,21 @@
 body {
-    width: 900px;
-    align-content: center;
+    margin: 0;
 }
 ul {
-    font-size: 120%;
-    color: #fff;
     display: inline-block;
-    padding: ;
-    margin: 10px;
+    text-align: center;
+    padding: 0 50px;
+    margin: 0;
     vertical-align: middle;
     background: #a64dff;
-    font: Impact;
+    font: 110% Impact;
+    width: 900px;
+
 }
 ul li {
-    float: left;
+    -float: left; /* при использовании float для выравнивания по левому краю - при наведении курсора (:hover) когда становится выделение серым - то это выделение подскакивает вверз на пару пикселей */
+    position: relative;
+    left: -150px;
     list-style-position: inside;
     text-transform: uppercase;
     cursor: pointer;
@@ -23,8 +25,12 @@ ul li {
 ul li a {
     display: block;
     padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
 }
 a:hover {
-    background: white;
-    color: ;
+    background: #eeeeee;
+    color: #a1a1a1;
+    padding: 12px 15px;
+    display: inline;
 }
