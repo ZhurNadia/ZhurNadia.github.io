@@ -20,6 +20,12 @@ ul li {
     cursor: pointer;
     margin: 0;
 }
+
+ul li:lastchild 
+{
+    float: right
+    
+}
 /* div {
     list-style-position: inside;
     list-style-type: none;
