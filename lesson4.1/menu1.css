@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+}
+ul {
+    display: inline-block;
+    text-align: center;
+    padding: 0 50px;
+    margin: 0;
+    vertical-align: middle;
+    background: #a64dff;
+    font: 110% Impact;
+    width: 900px;
+}
+ul li {
+    -float: left; /* при использовании float для выравнивания по левому краю - при наведении курсора (:hover) когда становится выделение серым - то это выделение подскакивает вверз на пару пикселей */
+    position: relative;
+    left: -150px;
+    list-style-position: inside;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+}
+ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    background: #eeeeee;
+    color: #a1a1a1;
+    padding: 12px 15px;
+    display: inline;
+}

@@ -1,0 +1,113 @@
+div.value {
+    position: relative;
+    float: left;
+    background: #fff;
+    border: 3px solid #e57f02; /* ????? ????? */
+    padding: 12px; /* ?????? ?????? ????? */
+    overflow: auto; /* ?????? ????????? */
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+
+}
+
+div.best_value {
+    margin: -12px -12px 0;
+    padding: 25px 0;
+    background: #e57f02;
+    text-align: center;
+    color: #fff;
+    font: bold 22px Arial;
+    text-transform: uppercase;
+}
+
+div.graphics {
+    margin: 5px 0 15px 0;
+    padding: 12px 0;
+    text-align: center;
+    color: #344859;
+    font: 22px Arial;
+    text-transform: uppercase;
+}
+
+div.cost {
+    position: relative;
+    margin: 5px 0 35px 0;
+    padding: 0 0 50px 35px;
+    text-align: center;
+    color: #344859;
+}
+
+div.cost1 {
+    display: inline-block;
+    position: absolute;
+    -float: left;
+    -top: 0;
+    -left: 0;
+    line-height: 0px;
+    margin: -5px 0 0 -85px;
+    font: 20px Arial;
+}
+
+div.cost2 {
+    display: inline-block;
+    position: absolute;
+    -float: left;
+    margin: -5px 0 0 -75px;
+    font: bold 55px Arial;
+}
+
+div.cost3 {
+    display: inline-block;
+    position: absolute;
+    -float: left;
+    -bottom: 0;
+    -right: 0;
+    margin: 35px 0 0 -12px;
+    font: 18px Arial;
+}
+
+.list ul li {
+    font: 15px Arial;
+    color: #878B93;
+    margin: 0 0 1px -38px;
+    padding: 6px 0;
+    list-style: none;
+    background: url("");
+}
+
+.list li:nth-of-type(2n+2) {
+    background: #F4F4F5;
+}
+
+.list li:nth-of-type(2n+1) {
+    background: #ECF4FC;
+}
+
+.list ul li:before {
+    content: '\2714';
+    color: #95BD18;
+    padding: 0 15px 0 30px;
+}
+
+div a {
+    background: #e57f02;
+    height: 27px;
+    width: 240px;
+    margin: 0 0 25px 0;
+    padding: 10px 0 0 0;
+    -overflow: hidden;
+    display: block;
+    text-align: center;
+    -line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+    font: bold 15px Arial;
+    border-radius: 5px;
+    box-shadow: 0px 3px 1px rgba(189, 104, 0, 1);
+}
+
+div a:hover {
+    background: #BD6800;
+    -color: #a0a0a0;
+    box-shadow: 0px 3px 1px rgba(189, 104, 0, 1);
+}

@@ -1,0 +1,18 @@
+div.nav {
+    background: darkorange;
+    border: 5px solid darkorange;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 0;
+}
+-div {
+    display: block;
+    position: relative;
+}
+
+.textarea {
+    position: relative;
+    display: inline-block;
+    float: left;
+}

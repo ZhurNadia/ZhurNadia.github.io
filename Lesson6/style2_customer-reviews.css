@@ -1,0 +1,117 @@
+.customer_reviews_block {
+    font-family: "FuturaBT Book", sans-serif;
+}
+
+.reviews_back1 {
+    height: 315px;
+    width: 1400px;
+    margin: auto 0;
+    background-image: url(background_review.jpg);
+    z-index: 1;
+}
+
+.reviews_back2 {
+    height: 315px;
+    width: 1400px;
+    background-color: rgba(15,20,30,0.9);
+    margin: auto 0;
+    z-index: 20;
+}
+
+.header_customer_reviews {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 48px 0;
+    font-size: 37px;
+    color: #3170a8;
+    text-transform: uppercase;
+}
+
+.header_customer_reviews > span{
+    color: #ee8129;
+}
+
+.text_review {
+    background-color: #f7f7f7;
+    float: left;
+    width: 365px;
+    -border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    color: #666666;
+    font-size: 13px;
+    padding: 14px;
+    position: relative;
+    display: inline;
+    z-index: 15;
+}
+
+.customer_photo1 {
+    float: left;
+    margin: 0 0 0 195px;
+    padding: 0 20px 0 0;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.item_review1 {
+    position: relative;
+    float: left;
+    display: inline;
+    top: 35px;
+    z-index: 1;
+    -border-color: transparent #f7f7f7 transparent transparent;
+    -border: 12px solid;
+    -width: 0;
+    -height: 0;
+}
+
+.customer_name {
+    position: relative;
+    margin: -5px 0 10px 0;
+    padding: 0 0 24px 0;
+    border-bottom: 2px dotted #666666;
+    font-style: italic;
+    color: #3070a8;
+}
+
+.client_name {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
+
+.client_customer {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+}
+
+.customer_says_text {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.item_review2 {
+    position: relative;
+    float: left;
+    display: inline;
+    top: 35px;
+    z-index: 1;
+    -border-color: transparent #f7f7f7 transparent transparent;
+    -border: 12px solid;
+    -width: 0;
+    -height: 0;
+}
+
+.customer_photo2 {
+    float: left;
+    margin: 0 0 0 50px;
+    padding: 0 20px 0 0;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}

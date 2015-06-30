@@ -1,0 +1,59 @@
+body {
+    color: transparent;
+    font: 90px Tahoma;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 1);
+    text-transform: uppercase;
+}
+div {
+    padding: 25px 0;
+    font-size: 80px;
+    width: 340px;
+    white-space: nowrap; /* ???? ????? ????????? ?? ????? ????? ?????? */
+}
+#line1 {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    font-size: 110px;
+    padding: 0 0 10px 0;
+    letter-spacing: 67px;
+}
+#line2 {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    word-spacing: 57px;
+}
+#line3 {
+    font-size: 0.85em;
+    word-spacing: 21px;
+}
+#line4 {
+    font-size: 0.80em;
+    word-spacing: 9.5px;
+}
+#line5 {
+    font-size: 0.75em;
+    word-spacing: 10px;
+}
+#line6 {
+    font-size: 0.65em;
+    word-spacing: 8px;
+}
+#line7 {
+    font-size: 0.55em;
+    word-spacing: 6px;
+}
+#line8 {
+    font-size: 0.40em;
+    word-spacing: 19.5px;
+}
+#line9 {
+    font-size: 0.30em;
+    word-spacing: 21.5px;
+}
+#line10 {
+    font-size: 0.20em;
+    word-spacing: 30px;
+    border-top: 1px solid red;
+}
+#line11 {
+    font-size: 0.15em;
+    word-spacing: 28.5px;
+}
