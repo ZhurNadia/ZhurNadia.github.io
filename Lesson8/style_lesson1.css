@@ -1,18 +1,21 @@
 div.nav {
-    background: darkorange;
-    border: 5px solid darkorange;
-    display: block;
+    background: #FFCD5D;
+    border: 5px solid #FFCD5D;
     position: relative;
     margin: 0 auto;
     padding: 0 0;
-}
--div {
-    display: block;
-    position: relative;
+    width: 450px;
 }
 
-.textarea {
-    position: relative;
-    display: inline-block;
-    float: left;
+#check_srch {
+    vertical-align: baseline;
+}
+
+div.nav::after {
+    width: 10px;
+    height: 10px;
+    border: 20px solid;
+    border-color: transparent transparent transparent #FFCD5D;
+    position: absolute;
+    left: 0;
 }

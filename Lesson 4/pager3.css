@@ -1,12 +1,17 @@
 div {
     margin: 0 auto;
-    background: white;
+    background: #eeeeee;
     text-transform: uppercase;
-    font-family: Impact;
-    padding-top: ;
+    font-family: Arial, sans-serif;
+    font-size: 90%;
 }
 
 div div {
-    width: 500px;
-    background: ;
+    width: 900px;
+    padding: 10px 10px;
+    margin: 5px 5px;
+}
+a {
+    text-decoration: none;
+    color: #A600A6;
 }
