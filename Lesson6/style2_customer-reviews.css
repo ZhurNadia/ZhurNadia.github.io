@@ -28,7 +28,7 @@
     text-transform: uppercase;
 }
 
-.header_customer_reviews > span{
+#review_header{
     color: #ee8129;
 }
 
@@ -36,40 +36,39 @@
     background-color: #f7f7f7;
     float: left;
     width: 365px;
-    -border: 1px solid #e0e0e0;
     box-sizing: border-box;
     color: #666666;
     font-size: 13px;
     padding: 14px;
     position: relative;
-    display: inline;
     z-index: 15;
+}
+
+.text_review:before {
+    content: ' ';
+    width: 0;
+    height: 0;
+    float: left;
+    border-color: transparent #f7f7f7 transparent transparent;
+    border: 12px solid;
+    position: absolute;
+    left: -23px;
+    top: 36px;
+    color: green;
 }
 
 .customer_photo1 {
     float: left;
-    margin: 0 0 0 195px;
-    padding: 0 20px 0 0;
+    margin: 0 35px 0 195px;
+    padding: 0;
     width: 100px;
     height: 100px;
     overflow: hidden;
 }
 
-.item_review1 {
+.client {
     position: relative;
-    float: left;
-    display: inline;
-    top: 35px;
-    z-index: 1;
-    -border-color: transparent #f7f7f7 transparent transparent;
-    -border: 12px solid;
-    -width: 0;
-    -height: 0;
-}
-
-.customer_name {
-    position: relative;
-    margin: -5px 0 10px 0;
+    margin: 0;
     padding: 0 0 24px 0;
     border-bottom: 2px dotted #666666;
     font-style: italic;
@@ -93,24 +92,14 @@
 .customer_says_text {
     line-height: 1.5;
     text-align: justify;
-}
-
-.item_review2 {
-    position: relative;
-    float: left;
-    display: inline;
-    top: 35px;
-    z-index: 1;
-    -border-color: transparent #f7f7f7 transparent transparent;
-    -border: 12px solid;
-    -width: 0;
-    -height: 0;
+    margin: 8px 0 0 0;
+    padding: 0;
 }
 
 .customer_photo2 {
     float: left;
-    margin: 0 0 0 50px;
-    padding: 0 20px 0 0;
+    margin: 0 35px 0 50px;
+    padding: 0;
     width: 100px;
     height: 100px;
     overflow: hidden;
