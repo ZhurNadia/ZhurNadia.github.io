@@ -1,21 +1,27 @@
 div.nav {
     background: #FFCD5D;
-    border: 5px solid #FFCD5D;
+    border: 6px solid #FFCD5D;
     position: relative;
     margin: 0 auto;
     padding: 0 0;
     width: 450px;
+    border-right: 0;
+    float: left;
 }
 
 #check_srch {
     vertical-align: baseline;
 }
-
-div.nav::after {
-    width: 10px;
-    height: 10px;
-    border: 20px solid;
+#arrow {
+    float: left;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    padding: 0 0;
+}
+#arrow::after {
+    content: ' ';
+    border: 26px solid;
     border-color: transparent transparent transparent #FFCD5D;
-    position: absolute;
-    left: 0;
+    float: left;
 }
