@@ -1,24 +1,22 @@
 html {
-    width: 100%;
-    margin: 0;
+    -width: 100%;
+    margin: 0 auto;
     padding: 0;
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
 }
 
 header {
-    -position: relative;
-    -width: 1400px;
+    width: 1400px;
     height: 116px;
-    -box-sizing: border-box;
+    margin: 0 auto;
 }
 .logo {
     float: left;
-    -width: 632px;
     padding: 0;
-    margin: 40px 160px 26px 190px;
+    margin: 40px 145px 26px 140px;
     font: 36pt "FuturaBT Bold", sans-serif;
     text-transform: uppercase;
     color: #3070a8;
@@ -31,8 +29,6 @@ header {
 }
 
 .menu {
-    -position: relative;
-    -display: inline-block;
     -float: left;
     padding: 0;
     margin: 0;
@@ -40,35 +36,53 @@ header {
     vertical-align: middle;
     background: #fff;
     font: 14pt "OpenSans Semibold", sans-serif;
-    -width: 768px;
+    overflow: hidden;
+}
+
+ul {
+    width: 865px;
+    margin: 0;
 }
 
 ul li {
     float: left;
-    -list-style-position: inside;
     list-style-type: none;
     text-transform: uppercase;
     cursor: pointer;
     margin: 0;
-    padding: 65px 20px 37px 20px;
+    padding: 62px 20px 35px 20px;
+    border-bottom: 4px solid transparent;
 }
 
 ul li a {
     text-decoration: none;
+    border-bottom: 4px solid transparent;
     color: #a0a0a0;
 }
 
 li a:hover {
-    border-bottom: 5px solid #3070a8;
+    border-bottom: 4px solid #3070a8;
     padding: 0 0 35px 0;
     color: #3070a8;
 }
 
 #banner {
     clear: both;
-    margin: auto;
+    margin: 0 auto;
+    height: 585px;
     text-align: center;
-    background-image: url("");
+    background: url("Banner_BG_pic.jpg") no-repeat;
+    position: relative;
+}
+
+#banner_bg {
+    height: 585px;
+    background-color: rgba(133,154,169,0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 #banner_text1 {
     font:
