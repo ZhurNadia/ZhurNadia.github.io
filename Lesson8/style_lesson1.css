@@ -1,27 +1,42 @@
-div.nav {
+#nav {
     background: #FFCD5D;
     border: 6px solid #FFCD5D;
+    border-bottom: 2px;
     position: relative;
     margin: 0 auto;
     padding: 0 0;
     width: 450px;
     border-right: 0;
     float: left;
+    transition: all 0.7s ease-out;
 }
 
-#check_srch {
-    vertical-align: baseline;
-}
-#arrow {
-    float: left;
-    width: 0;
-    height: 0;
-    margin: 0 auto;
-    padding: 0 0;
-}
-#arrow::after {
-    content: ' ';
-    border: 26px solid;
+#nav::after {
+    content: '';
+    position: absolute;
+    left: 450px;
+    top: -6px;
+    border: 24px solid;
     border-color: transparent transparent transparent #FFCD5D;
-    float: left;
+    transition: all 0.7s ease-out;
+}
+
+input#textarea1 {
+    width: 385px;
+    transition: all 0.7s ease-out;
+}
+
+#search {
+    vertical-align: text-top;
+    margin: 4px 0;
+}
+
+#nav:hover  {
+    width:645px;
+}
+#nav:hover::after {
+    left:645px;
+}
+#nav:hover #textarea1 {
+    width:580px;
 }
