@@ -6,36 +6,25 @@ ul {
     text-align: center;
     padding: 0 50px;
     margin: 0;
-    vertical-align: middle;
     background: #a64dff;
-    font: 110% Impact;
+    font: 18px Impact;
     width: 900px;
 }
 
 ul li {
     float: left;
-    list-style-position: inside;
     list-style-type: none;
     text-transform: uppercase;
     cursor: pointer;
     margin: 0;
 }
 
-ul li:last-child
-{
+ul li:last-child {
     float: right
-    
 }
-div {
-    list-style-position: inside;
-    list-style-type: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin: 0;
-}
-#more {
-    float: right;
-}
+/*ћожно было последнюю ссылку меню <a> "More" обернуть в див и присвоить ему position: relative и
+пододвинуть к краю с помощью например left: 100px. ¬ этом варианте, если понадобитс€ выпадающее меню, то оно будет
+выпадать оттуда где передвинутый элемент стоит или с того места где оно сто€ло до того, как пододвинули его с relative? */
 
 li a {
     text-decoration: none;
@@ -47,6 +36,5 @@ li a {
 a:hover {
     background: #eeeeee;
     color: #a1a1a1;
-    position: relative;
-    top: 2px;
+    box-shadow: 0 0 3px rgba(161, 161, 161, 0.4)
 }
