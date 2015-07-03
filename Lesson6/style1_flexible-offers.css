@@ -1,5 +1,6 @@
 .gen {
-    margin: 0 20%;
+    margin: 0 auto;
+    width: 824px;
 }
 
 .text {
@@ -13,7 +14,6 @@
 }
 
 div.standard {
-    -position: relative;
     display: inline-block;
     float: left;
     background: #fff;
@@ -38,7 +38,6 @@ div.value {
 }
 
 div.ultimate {
-    -position: relative;
     display: inline-block;
     float: left;
     background: #fff;
