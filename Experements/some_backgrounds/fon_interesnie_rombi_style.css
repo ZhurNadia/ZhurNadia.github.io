@@ -1,0 +1,11 @@
+HTML, BODY {
+    height: 100%;
+}
+
+BODY {
+    background-image: -webkit-linear-gradient(30deg, white -5%, white 5%, lightblue 0%, lightblue 10%, skyblue 5%, skyblue 15%, steelblue 10%, steelblue 20%, #38678f 15%, #38678f 25%, red 20%, red 30%, #ff6666 25%, #ff6666 35%, orange 30%, orange 40%, gold 35%, gold 45%, #ffef99 40%, #ffef99 50%, white 45%, white 55%, lightblue 50%, lightblue 60%, skyblue 55%, skyblue 65%, steelblue 60%, steelblue 70%, #38678f 65%, #38678f 75%, red 70%, red 80%, #ff6666 75%, #ff6666 85%, orange 80%, orange 90%, gold 85%, gold 95%, #ffef99 90%, #ffef99 100%), -webkit-linear-gradient(150deg, white -5%, white 5%, lightblue 0%, lightblue 10%, skyblue 5%, skyblue 15%, steelblue 10%, steelblue 20%, #38678f 15%, #38678f 25%, red 20%, red 30%, #ff6666 25%, #ff6666 35%, orange 30%, orange 40%, gold 35%, gold 45%, #ffef99 40%, #ffef99 50%, white 45%, white 55%, lightblue 50%, lightblue 60%, skyblue 55%, skyblue 65%, steelblue 60%, steelblue 70%, #38678f 65%, #38678f 75%, red 70%, red 80%, #ff6666 75%, #ff6666 85%, orange 80%, orange 90%, gold 85%, gold 95%, #ffef99 90%, #ffef99 100%);
+    background-image: linear-gradient(60deg, white -5%, white 5%, lightblue 0%, lightblue 10%, skyblue 5%, skyblue 15%, steelblue 10%, steelblue 20%, #38678f 15%, #38678f 25%, red 20%, red 30%, #ff6666 25%, #ff6666 35%, orange 30%, orange 40%, gold 35%, gold 45%, #ffef99 40%, #ffef99 50%, white 45%, white 55%, lightblue 50%, lightblue 60%, skyblue 55%, skyblue 65%, steelblue 60%, steelblue 70%, #38678f 65%, #38678f 75%, red 70%, red 80%, #ff6666 75%, #ff6666 85%, orange 80%, orange 90%, gold 85%, gold 95%, #ffef99 90%, #ffef99 100%), linear-gradient(-60deg, white -5%, white 5%, lightblue 0%, lightblue 10%, skyblue 5%, skyblue 15%, steelblue 10%, steelblue 20%, #38678f 15%, #38678f 25%, red 20%, red 30%, #ff6666 25%, #ff6666 35%, orange 30%, orange 40%, gold 35%, gold 45%, #ffef99 40%, #ffef99 50%, white 45%, white 55%, lightblue 50%, lightblue 60%, skyblue 55%, skyblue 65%, steelblue 60%, steelblue 70%, #38678f 65%, #38678f 75%, red 70%, red 80%, #ff6666 75%, #ff6666 85%, orange 80%, orange 90%, gold 85%, gold 95%, #ffef99 90%, #ffef99 100%);
+    background-color: orangered;
+    background-size: 6em 10.32em;
+    background-blend-mode: multiply, normal;
+}

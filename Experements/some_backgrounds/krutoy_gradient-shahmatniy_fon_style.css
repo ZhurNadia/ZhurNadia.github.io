@@ -1,0 +1,14 @@
+HTML, BODY {
+    height: 100%;
+}
+
+BODY {
+    background-image: -webkit-linear-gradient(aquamarine, gold), -webkit-linear-gradient(white 50%, black 50%), -webkit-linear-gradient(0deg, white 50%, black 50%);
+    background-image: linear-gradient(aquamarine, gold), linear-gradient(white 50%, black 50%), linear-gradient(90deg, white 50%, black 50%);
+    background-blend-mode: screen, difference, normal;
+    background-size: 100% 100%, 5em 5em, 5em 5em;
+}
+
+/*
+['multiply', 'screen', 'overlay', 'darken', 'lighten', 'color-dodge', 'color-burn', 'hard-light', 'soft-light', 'difference', 'exclusion', 'hue', 'saturation', 'color', 'luminosity','normal']
+*/

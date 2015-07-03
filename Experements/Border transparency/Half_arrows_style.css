@@ -1,0 +1,41 @@
+/*ќбнулив border не с одной стороны, а с двух, можно получить вот такие уголки:*/
+.first {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+}
+
+.arrow-top {
+    border-top-color: orangered;
+    border-bottom: 0;
+    border-right: 0;
+}
+.arrow-right {
+    border-right-color: gold;
+    border-left: 0;
+    border-bottom: 0;
+
+}
+
+/*јналогичный эффект можно получить, задав цвет двум сторонам, наход€щимс€ р€дом.
+ѕри этом в середине длинной стороны может быть небольша€ неровность, в отличие от первого способа.*/
+.second {
+    width: 0;
+    height: 0;
+    border: 25px solid transparent;
+}
+
+.arrow-bottom {
+    border-color: transparent transparent yellowgreen yellowgreen;
+}
+.arrow-left {
+    border-color: steelblue transparent transparent steelblue;
+}
+
+BODY {
+    background: white;
+}
+DIV {
+    display: inline-block;
+    margin: 30px 10px;
+}

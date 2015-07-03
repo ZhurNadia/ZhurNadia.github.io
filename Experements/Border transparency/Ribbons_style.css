@@ -1,0 +1,60 @@
+
+.ribbon {
+    position: relative;
+    width: 80%;
+    min-width: 300px;
+    margin: 3em auto;
+
+}
+H1 {
+    margin: 0 1em;
+    background: orangered;
+    font-weight: normal;
+    line-height: 1.7em;
+    text-align: center;
+    text-shadow: 0 0 2px rgba(0,0,0,.4);
+    box-shadow: 0 3px 5px rgba(0,0,0,.2);
+    color: #FFF;
+}
+.ribbon:before,
+.ribbon:after,
+H1:before,
+H1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.ribbon:before,
+.ribbon:after {
+    top: 1.4em;
+    z-index: -2;
+    border: 1.6em solid orangered;
+}
+.ribbon:before {
+    left: 0;
+    border-left-color: transparent;
+}
+.ribbon:after {
+    right: 0;
+    border-right-color: transparent;
+}
+H1:before,
+H1:after {
+    top: 1.7em;
+    z-index: -1;
+    border: .3em solid crimson;
+    border-bottom-color: transparent;
+}
+H1:before {
+    left: 1em;
+    border-left-color: transparent;
+}
+H1:after {
+    right: 1em;
+    border-right-color: transparent;
+}
+BODY {
+    background: white;
+}

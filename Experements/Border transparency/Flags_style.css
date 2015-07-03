@@ -1,0 +1,58 @@
+/*если задать цвет с трёх сторон, получатся флажки : )*/
+
+.flags {
+    white-space: nowrap;
+}
+.flags:nth-child(2) {
+    margin-left: -320px;
+}
+.flags:nth-child(3) {
+    margin-left: -160px;
+}
+SPAN {
+    display: inline-block;
+    width: 160px;
+    margin: 20px 0;
+    border-top: 1px solid silver;
+}
+SPAN {
+    position: relative;
+}
+SPAN:before,
+SPAN:after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    border: 25px solid transparent;
+    border-color: orangered;
+}
+SPAN:after {
+    margin-left: 30px;
+    border-color: gold;
+}
+SPAN:nth-child(4n+2):before {
+    border-color: yellowgreen;
+}
+SPAN:nth-child(4n+2):after {
+    border-color: orange;
+}
+SPAN:nth-child(4n+3):before {
+    border-color: mediumturquoise;
+}
+SPAN:nth-child(4n+3):after {
+    border-color: crimson;
+}
+SPAN:nth-child(4n+4):before {
+    border-color: gold;
+}
+SPAN:nth-child(4n+4):after {
+    border-color: steelblue;
+}
+SPAN:before,
+SPAN:after {
+    border-bottom-color: transparent !important;
+}
+BODY {
+    overflow: hidden;
+    background: white;
+}

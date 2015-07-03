@@ -1,0 +1,29 @@
+DIV {
+    width: 0;
+    height: 0;
+    border: 40px solid transparent;
+}
+.arrow-top {
+    border-top-color: orangered;
+    border-bottom: 0;
+}
+.arrow-right {
+    border-right-color: gold;
+    border-left: 0;
+}
+.arrow-bottom {
+    border-bottom-color: yellowgreen;
+    border-top: 0;
+}
+.arrow-left {
+    border-left-color: steelblue;
+    border-right: 0;
+}
+
+BODY {
+    background: white;
+}
+DIV {
+    display: inline-block;
+    margin: 30px 10px;
+}
