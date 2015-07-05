@@ -1,47 +1,66 @@
 html {
-    -width: 100%;
     margin: 0 auto;
     padding: 0;
 }
 
 body {
     margin: 0 auto;
+    width: 1400px;
+}
+
+@font-face {
+    font-family: FuturaBT_Book;
+    src: local("FuturaBT Book"),
+        url(FuturaBT_Book_light.ttf);
+}
+
+@font-face {
+    font-family: FuturaBT_Bold;
+    src: local("FuturaBT Bold"),
+        url(FuturaBT_Bold_light.ttf);
+}
+
+@font-face {
+    font-family: OpenSans_Semibold;
+    src: local("OpenSans Semibold"),
+        url(OpenSans.ttf);
 }
 
 header {
-    width: 1400px;
     height: 116px;
     margin: 0 auto;
 }
 .logo {
     float: left;
     padding: 0;
-    margin: 40px 145px 26px 140px;
-    font: 36pt "FuturaBT Bold", sans-serif;
+    margin: 36px 160px 36px 184px;
+    font: 29pt FuturaBT_Bold, sans-serif;
     text-transform: uppercase;
     color: #3070a8;
 }
 
 .logo span {
-    font: 36pt "PoiretOne Regular", sans-serif;
+    font: 29pt PoiretOne_Regular, sans-serif;
     text-transform: none;
     color: #ee8129;
 }
 
 .menu {
-    -float: left;
+    float: left;
     padding: 0;
     margin: 0;
     text-align: center;
-    vertical-align: middle;
     background: #fff;
-    font: 14pt "OpenSans Semibold", sans-serif;
+    font: 13pt OpenSans_Semibold, sans-serif;
     overflow: hidden;
+    width: 768px;
 }
 
 ul {
-    width: 865px;
+    height: 116px;
+    padding: 0;
     margin: 0;
+    float: left;
 }
 
 ul li {
@@ -50,62 +69,121 @@ ul li {
     text-transform: uppercase;
     cursor: pointer;
     margin: 0;
-    padding: 62px 20px 35px 20px;
-    border-bottom: 4px solid transparent;
+    padding: 0;
 }
 
 ul li a {
     text-decoration: none;
     border-bottom: 4px solid transparent;
     color: #a0a0a0;
+    padding: 0 20px 29px 20px;
+    margin: 62px 0 0 0;
+    display: block;
 }
 
 li a:hover {
     border-bottom: 4px solid #3070a8;
-    padding: 0 0 35px 0;
     color: #3070a8;
 }
 
 #banner {
     clear: both;
-    margin: 0 auto;
+    margin: -16px auto; /*ѕочему между блоками Header и nav id=banner по€вилс€ отступ в 16px? */
     height: 585px;
     text-align: center;
-    background: url("Banner_BG_pic.jpg") no-repeat;
+    background: url("Banner_BG_pic.jpg") no-repeat, url("banner_bg_2.png");
     position: relative;
 }
 
 #banner_bg {
     height: 585px;
-    background-color: rgba(133,154,169,0.9);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    background: url("banner_bg_2.png");
+    margin: 0;
+    color: white;
 }
+
 #banner_text1 {
-    font:
-    margin: 0 0 0 0;
+    position: relative;
+    top: 153px;
+    font: 33pt FuturaBT_Book, sans-serif;
+    margin: 0;
 }
 
 #banner_text2 {
-    font:
-    margin: 0 0 0 0;
+    font: bold 33pt FuturaBT_Bold, sans-serif;
+    text-transform: uppercase;
 }
 
 #banner_text3 {
-    font: 20pt Calibri, sans-sarif;
-    font-style: italic;
-    margin: 0 0 0 0;
+    font: italic 15pt Calibri, sans-sarif;
+    margin: 163px 0 0 0;
 }
 
 #banner_button {
+
     padding: 0 0 0 0;
-    border: 1px solid white;
-    font: ;
+    font: 13pt OpenSans_Semibold, sans-serif;
+    text-transform: uppercase;
+    margin: 0 auto;
 }
 #banner_button a {
     text-decoration: none;
-    color: ;
+    color: white;
+    display: block;
+    margin: 43px auto 0 auto;
+    padding: 14px 0 0 0;
+    width: 245px;
+    height: 43px;
+    border: 1px solid white;
+}
+
+#services_section {
+    height: 563px;
+    margin: 16px auto 0 auto;
+}
+
+#services_header {
+    position: relative;
+    top: 68px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font: 22pt "Trebuchet MS";
+    color: #41525c;
+}
+
+#services_block_gen {
+    position: relative;
+    top: 147px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services_block {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 0 0;
+    width: 302px;
+}
+
+.serv_img {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    background: url("");
+    background-color: #3070a8;
+    margin: 0 auto;
+    -text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+
+.serv_img_head {
+    font: 25pt FuturaBT_Book, sans-serif;
+    color: #3070a8;
+    text-transform: uppercase;
+    margin: 30px auto;
+}
+
+.serv_text {
+    color: #999999;
+    font: 11pt OpenSans_Semibold, sans-serif;
 }
