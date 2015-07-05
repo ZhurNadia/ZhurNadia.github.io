@@ -1,11 +1,11 @@
 html {
     margin: 0 auto;
     padding: 0;
+    width: 1400px;
 }
 
 body {
     margin: 0 auto;
-    width: 1400px;
 }
 
 @font-face {
