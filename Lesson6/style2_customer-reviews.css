@@ -15,7 +15,7 @@
     width: 1400px;
     background-color: rgba(15,20,30,0.9);
     margin: auto 0;
-    z-index: 20;
+   z-index: 20;
 }
 
 .header_customer_reviews {
@@ -52,7 +52,7 @@
     border-color: transparent #f7f7f7 transparent transparent;
     border: 12px solid;
     position: absolute;
-    left: -23px;
+    left: -24px;
     top: 36px;
 }
 

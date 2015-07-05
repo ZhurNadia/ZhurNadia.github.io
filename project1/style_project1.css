@@ -11,19 +11,19 @@ body {
 @font-face {
     font-family: FuturaBT_Book;
     src: local("FuturaBT Book"),
-        url(FuturaBT_Book_light.ttf);
+        url(fonts/FuturaBT_Book_light.ttf);
 }
 
 @font-face {
     font-family: FuturaBT_Bold;
     src: local("FuturaBT Bold"),
-        url(FuturaBT_Bold_light.ttf);
+        url(fonts/futura-md-bt-bold.ttf);
 }
 
 @font-face {
     font-family: OpenSans_Semibold;
     src: local("OpenSans Semibold"),
-        url(OpenSans.ttf);
+        url(fonts/OpenSans.ttf);
 }
 
 header {
@@ -53,17 +53,17 @@ header {
     background: #fff;
     font: 13pt OpenSans_Semibold, sans-serif;
     overflow: hidden;
-    width: 768px;
+    width: 755px;
 }
 
-ul {
+.menu ul {
     height: 116px;
     padding: 0;
     margin: 0;
     float: left;
 }
 
-ul li {
+.menu ul li {
     float: left;
     list-style-type: none;
     text-transform: uppercase;
@@ -72,39 +72,45 @@ ul li {
     padding: 0;
 }
 
-ul li a {
+.menu ul li a {
     text-decoration: none;
     border-bottom: 4px solid transparent;
     color: #a0a0a0;
-    padding: 0 20px 29px 20px;
-    margin: 62px 0 0 0;
+    padding: 0 20px 30px 20px;
+    margin: 58px 0 0 0;
     display: block;
 }
 
-li a:hover {
+.menu li a:hover {
     border-bottom: 4px solid #3070a8;
     color: #3070a8;
 }
 
+/*section BANNER */
+
 #banner {
-    clear: both;
-    margin: -16px auto; /*ѕочему между блоками Header и nav id=banner по€вилс€ отступ в 16px? */
+    margin: 0 auto;
     height: 585px;
     text-align: center;
-    background: url("Banner_BG_pic.jpg") no-repeat, url("banner_bg_2.png");
+    background: url("images/Banner_BG_pic.jpg") no-repeat, url("images/banner_bg_2.png"); /* ѕочему втора€ картинка не
+    накладываетс€ на первую? ѕришлось добавл€ть второй слой фона в дочерний div #banner_bg */
     position: relative;
 }
 
 #banner_bg {
     height: 585px;
-    background: url("banner_bg_2.png");
+    background: url("images/banner_bg_2.png");
     margin: 0;
+}
+
+#banner_t {
+    margin: 150px 0 0 0;
     color: white;
+    text-align: center;
+    display: inline-block;
 }
 
 #banner_text1 {
-    position: relative;
-    top: 153px;
     font: 33pt FuturaBT_Book, sans-serif;
     margin: 0;
 }
@@ -112,11 +118,12 @@ li a:hover {
 #banner_text2 {
     font: bold 33pt FuturaBT_Bold, sans-serif;
     text-transform: uppercase;
+    margin: 0 auto;
 }
 
 #banner_text3 {
     font: italic 15pt Calibri, sans-sarif;
-    margin: 163px 0 0 0;
+    margin: 32px 0 0 0;
 }
 
 #banner_button {
@@ -136,6 +143,8 @@ li a:hover {
     height: 43px;
     border: 1px solid white;
 }
+
+/*section SERVICES */
 
 #services_section {
     height: 563px;
@@ -173,7 +182,6 @@ li a:hover {
     background: url("");
     background-color: #3070a8;
     margin: 0 auto;
-    -text-shadow: 1px 1px 2px black, 0 0 1em red;
 }
 
 .serv_img_head {
@@ -187,3 +195,367 @@ li a:hover {
     color: #999999;
     font: 11pt OpenSans_Semibold, sans-serif;
 }
+
+/*как прив€зать иконки Bootstrap?? */
+@-font-face {
+    font-family: Glyphicons_Halflings;
+    src: url('{ASSETS_OTHER_PATH}glyphicons-halflings-regular.eot');
+    src: url('{ASSETS_OTHER_PATH}glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('{ASSETS_OTHER_PATH}glyphicons-halflings-regular.woff') format('woff'), url('{ASSETS_OTHER_PATH}glyphicons-halflings-regular.ttf') format('truetype'), url('{ASSETS_OTHER_PATH}glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+@font-face {
+    font-family: Glyphicons_Halflings;
+    src: url('../fonts/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+.glyphicon {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    font-family: Glyphicons_Halflings;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1;
+    text-shadow: 1px 1px 2px black, 0 0 1em #2b6598;
+}
+
+.glyphicon-lock:before {
+    content: " ";
+}
+
+/*section MIDDLE */
+
+#middle-section {
+    margin: 0 auto;
+    height: 577px;
+    background: url("images/middle-section_BG_pic.jpg") no-repeat;
+    position: relative;
+    display: inline-block;
+}
+
+#middle-section_bg2 {
+    height: 577px;
+    background: url("images/middle-section_BG_2-2.png");
+    margin: 0 auto;
+    position: relative;
+}
+
+#middle-section_header {
+    margin: 0 0 45px 189px;
+    position: relative;
+    top: 90px; /* ѕочему при выставлении верхнего отступа margin 90px, то данный блок опускает весь родительский блок
+    на 90px. ѕриходитьс€ опускать top-ом в position: relative. Ќо в этом случае все идущие последующие блоки уже не так
+    удобно позиционировать, если бы просто данный блок применил верхний отступ относительно родителького */
+}
+
+#middle-section_header span {
+    color: #ee8129;
+    font: bold 18pt FuturaBT_Book, sans-serif;
+    text-transform: uppercase;
+}
+
+#middle-section_header p {
+    color: white;
+    font: italic 12pt OpenSans_Semibold, sans-serif;
+    margin: 16px 0 0 0;
+}
+
+#middle-section_list {
+    margin: 135px 563px 0 189px;
+    color: #a3a3a3;
+    font: 11pt OpenSans_Semibold, sans-serif;
+    line-height: 2.5;
+}
+
+#middle-section_list li {
+    margin: 12px 0;
+}
+
+#middle-section_list li:nth-child(2n) {
+    color: #3070a8;
+}
+
+/* section PRICING 'Flexible offers' */
+#pricing {
+    height: 704px;
+    margin: 0 auto;
+}
+
+#pricing_3block {
+    margin: 0 auto;
+    width: 830px;
+}
+
+#pricing_header {
+    display: block;
+    position: relative;
+    top: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    font: bold 27px "Trebuchet MS", sans-serif;
+    margin: 0 0 60px 0;
+    padding: 0;
+}
+#pricing_3block {
+    position: relative;
+    top: 60px;
+    margin: 0 auto;
+}
+
+.pricing_block {
+    float: left;
+    position: relative;
+    background: #fff;
+    padding: 16px;
+    overflow: auto;
+}
+.b-left {
+    border: 1px solid #EBECEE;
+    margin: 15px 0 0 0;
+    border-radius: 5px 0 0 5px;
+    z-index: 1;
+}
+
+.b-middle {
+    border: 3px solid #e57f02;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    z-index: 30;
+}
+
+.b-right {
+    border: 1px solid #EBECEE;
+    margin: 15px 0 0 0;
+    border-radius: 0 5px 5px 0;
+    z-index: 2;
+}
+
+.pricing_value {
+    margin: -16px -16px 0;
+    text-align: center;
+    font: bold 20px FuturaBT_Bold, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.b-left .pricing_value {
+    padding: 18px 0;
+    background: #2BC1D3;
+}
+
+.b-middle .pricing_value {
+    padding: 25px 0;
+    background: #e57f02;
+}
+
+.b-right .pricing_value {
+    padding: 19px 0;
+    background: #00B799;
+}
+
+.pricing_p {
+    margin: 5px 0 15px 0;
+    padding: 12px 0;
+    text-align: center;
+    color: #344859;
+    font: 22px FuturaBT_Book, sans-serif;
+    text-transform: uppercase;
+}
+
+.pricing_cost {
+    position: relative;
+    margin: 5px 0 40px 0;
+    padding: 0 0 50px 35px;
+    text-align: center;
+    color: #344859;
+}
+
+.cost1 {
+    position: absolute;
+    top: 0;
+    left: 45px;
+    font: 28px FuturaBT_Bold, "Trebuchet MS", sans-serif; /* ѕочему-то в шрифте FuturaBT_Bold не примен€ютс€ цифры */
+}
+
+.cost2 {
+    position: absolute;
+    top: -5px;
+    left: 60px;
+    font: bold 68px FuturaBT_Bold, "Trebuchet MS", sans-serif;
+}
+
+.cost3 {
+    position: absolute;
+    top: 45px;
+    left: 143px;
+    font: 18px FuturaBT_Book, sans-serif;
+}
+
+.pricing_list ul li {
+    font: 15px Calibri, sans-serif;
+    color: #878B93;
+    margin: 0 0 1px -38px;
+    padding: 6px 0;
+    list-style: none;
+}
+
+.pricing_list li:nth-of-type(2n+2) {
+    background: #F4F4F5;
+}
+
+.pricing_list li:nth-of-type(2n+1) {
+    background: #ECF4FC;
+}
+
+.pricing_list ul li:before {
+    content: '\2714';
+    color: #95BD18;
+    padding: 0 15px 0 30px;
+}
+
+.pricing_button a{
+    height: 27px;
+    width: 240px;
+    padding: 10px 0 0 0;
+    display: block;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font: bold 14px OpenSans_Semibold, sans-serif;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.enroll-1 {
+    background: #306FA7;
+    box-shadow: 0 3px 1px rgba(0,47,91, 1);
+    margin: 0 0 15px 0;
+}
+
+.enroll-2 {
+    background: #e57f02;
+    box-shadow: 0 3px 1px rgba(189, 104, 0, 1);
+    margin: 0 0 25px 0;
+}
+
+.enroll-2:hover {
+    background: #BD6800;
+}
+
+.enroll-1:hover {
+    background: #002F5B;
+}
+
+/* Section TESTIMONIALS */
+#testimonials {
+    height: 312px;
+    margin: 0 auto;
+}
+
+.reviews_back1 {
+    height: 315px;
+    width: 1400px;
+    margin: auto 0;
+    background-image: url(images/background_review.jpg);
+    z-index: 1;
+}
+
+.reviews_back2 {
+    height: 315px;
+    width: 1400px;
+    background-color: rgba(15,20,30,0.9);
+    margin: auto 0;
+    z-index: 20;
+}
+
+.header_customer_reviews {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 48px 0;
+    font: bold 40px FuturaBT_Bold, sans-serif;
+    color: #3170a8;
+    text-transform: uppercase;
+}
+
+#review_header{
+    color: #ee8129;
+    font: normal 40px FuturaBT_Book, sans-serif;
+}
+
+.text_review {
+    background-color: #f7f7f7;
+    float: left;
+    width: 365px;
+    box-sizing: border-box;
+    color: #666666;
+    font: 13px OpenSans_Semibold, sans-serif;
+    padding: 14px;
+    position: relative;
+    z-index: 15;
+}
+
+.text_review:before {
+    content: ' ';
+    width: 0;
+    height: 0;
+    float: left;
+    border-color: transparent #f7f7f7 transparent transparent; /* ѕочему не получаетс€ стрелочка? */
+    border: 12px solid;
+    position: absolute;
+    left: -24px;
+    top: 36px;
+}
+
+.customer_photo1 {
+    background: url("images/Client1.jpg");
+    float: left;
+    margin: 0 35px 0 195px;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.client {
+    position: relative;
+    margin: 0;
+    padding: 0 0 24px 0;
+    border-bottom: 2px dotted #666666;
+    font-style: italic;
+    color: #3070a8;
+}
+
+.client_name {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
+
+.client_customer {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+}
+
+.customer_says_text {
+    line-height: 1.5;
+    text-align: justify;
+    margin: 8px 0 0 0;
+    padding: 0;
+}
+
+.customer_photo2 {
+    background: url("images/Client2.jpg");
+    float: left;
+    margin: 0 35px 0 50px;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
