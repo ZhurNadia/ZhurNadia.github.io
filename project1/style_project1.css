@@ -262,10 +262,10 @@ header {
 }
 
 #middle-section_list {
-    margin: 135px 563px 0 189px;
+    margin: 130px 563px 0 189px;
     color: #a3a3a3;
     font: 11pt OpenSans_Semibold, sans-serif;
-    line-height: 2.5;
+    line-height: 2;
 }
 
 #middle-section_list li {
