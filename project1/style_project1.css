@@ -137,10 +137,10 @@ header {
     text-decoration: none;
     color: white;
     display: block;
-    margin: 43px auto 0 auto;
-    padding: 14px 0 0 0;
+    margin: 42px auto 0 auto;
+    padding: 13px 0;
     width: 245px;
-    height: 43px;
+    height: 52px;
     border: 1px solid white;
 }
 
@@ -182,6 +182,8 @@ header {
     background: url("");
     background-color: #3070a8;
     margin: 0 auto;
+    position: relative;
+    box-shadow: inset 3px 3px 0 3px #2b6598;
 }
 
 .serv_img_head {
@@ -196,32 +198,33 @@ header {
     font: 11pt OpenSans_Semibold, sans-serif;
 }
 
-/*как прив€зать иконки Bootstrap?? */
-@-font-face {
-    font-family: Glyphicons_Halflings;
-    src: url('{ASSETS_OTHER_PATH}glyphicons-halflings-regular.eot');
-    src: url('{ASSETS_OTHER_PATH}glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('{ASSETS_OTHER_PATH}glyphicons-halflings-regular.woff') format('woff'), url('{ASSETS_OTHER_PATH}glyphicons-halflings-regular.ttf') format('truetype'), url('{ASSETS_OTHER_PATH}glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+.glyphicon-lock, .glyphicon-flash, .glyphicon-phone {
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px 0 #2b6598,
+        2px 2px 0 #2b6598,
+        3px 3px 0 #2b6598,
+        4px 4px 0 #2b6598,
+        5px 5px 0 #2b6598,
+        6px 6px 0 #2b6598,
+        7px 7px 0 #2b6598,
+        8px 8px 0 #2b6598,
+        9px 9px 0 #2b6598,
+        10px 10px 0 #2b6598,
+        11px 11px 2px #2b6598,
+        12px 12px 3px #2b6598,
+        13px 13px 4px #2b6598,
+        14px 14px 5px #2b6598,
+        15px 15px 8px #2b6598,
+        16px 16px 10px #2b6598,
+        17px 17px 12px #2b6598,
+        18px 18px 15px #2b6598;
 }
 
-@font-face {
-    font-family: Glyphicons_Halflings;
-    src: url('../fonts/glyphicons-halflings-regular.eot');
-    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
-}
-
-.glyphicon {
+.services_glyphicon {
     position: relative;
-    top: 0;
-    display: inline-block;
-    font-family: Glyphicons_Halflings;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 1;
-    text-shadow: 1px 1px 2px black, 0 0 1em #2b6598;
-}
-
-.glyphicon-lock:before {
-    content: " ";
+    top: 40px;
+    margin: auto;
 }
 
 /*section MIDDLE */
@@ -416,7 +419,7 @@ header {
 }
 
 .pricing_button a{
-    height: 27px;
+    height: 38px;
     width: 240px;
     padding: 10px 0 0 0;
     display: block;
@@ -441,10 +444,14 @@ header {
 }
 
 .enroll-2:hover {
-    background: #BD6800;
+    text-decoration: none;
+    color: #fff;
+    background: #bd5015;
 }
 
 .enroll-1:hover {
+    text-decoration: none;
+    color: #fff;
     background: #002F5B;
 }
 
@@ -452,6 +459,7 @@ header {
 #testimonials {
     height: 312px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .reviews_back1 {
@@ -502,8 +510,8 @@ header {
     width: 0;
     height: 0;
     float: left;
-    border-color: transparent #f7f7f7 transparent transparent; /* ѕочему не получаетс€ стрелочка? */
     border: 12px solid;
+    border-color: transparent #f7f7f7 transparent transparent; /* ѕочему не получаетс€ стрелочка? */
     position: absolute;
     left: -24px;
     top: 36px;
@@ -559,3 +567,93 @@ header {
     overflow: hidden;
 }
 
+/* FOOTER */
+
+footer {
+    height: 449px;
+    overflow: hidden;
+    margin: 0 auto;
+    font: 14px OpenSans_Semibold, sans-serif;
+}
+
+#footer_block_top {
+    position: relative;
+    width: 1400px;
+    height: 345px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#footer_block_left {
+    float: left;
+    margin: 48px 0 0 189px;
+}
+
+#footer_contact {
+    color: #a0a0a0;
+    display: inline-block;
+}
+
+.glyphicon-map-marker, .footer_contact#contact_email.glyphicon-phone, .glyphicon-envelope {
+    color: #3070a8;
+    font-size: 35px;
+    text-shadow: none;
+    float: left;
+    display: inline-block;
+}
+
+
+
+.footer_contact_2 {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+#footer_social_icon {
+    margin: 32px 0 0 2px;
+}
+
+.f_soc_icon {
+    float: left;
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    margin: 0 11px;
+    cursor: pointer;
+}
+
+.icon_left {
+    background: url("images/footer_soc-icon_fb.png");
+}
+
+.icon_middle {
+    background: url("images/footer_soc-icon_tw.png");
+}
+
+.icon_right {
+    background: url("images/footer_soc-icon_in.png");
+}
+
+#footer_map {
+    height: 345px;
+    width: 704px;
+    float: right;
+    background: url("images/footer_map.jpg");
+}
+
+#footer_block_bottom {
+    background: #3070a8;
+    color: white;
+    text-align: center;
+    padding: 28px 0;
+}
+
+#footer_block_bottom span {
+    font-weight: bold;
+}
+
+#footer_block_bottom a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
