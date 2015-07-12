@@ -1,0 +1,357 @@
+html, body {
+    width: 1920px;
+    margin: 0 auto;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header,
+#banner,
+#about,
+#middle,
+#feedbacks,
+#plea,
+footer {
+    width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#header,
+#banner_div,
+#about_div,
+#middle_div,
+#feedbacks_div,
+#plea_div,
+#footer {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    background: #3498db;
+    height: 78px;
+    color: white;
+}
+
+#logo_head_div {
+    float: left;
+    margin: 12px 0 10px 0;
+}
+
+.logo {
+    border: 2px solid white;
+    border-radius: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.logo_head {
+    height: 48px;
+    width: 48px;
+    font-size: 15px;
+}
+
+.logo_a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.cmtt_head {
+    float: left;
+    text-transform: uppercase;
+    font-size: 19px;
+    margin: 29px 0 29px 14px;
+}
+
+.ic-head {
+    float: right;
+}
+
+.connect {
+    font-size: 10px;
+    margin: 33px 6px 0 0;
+    display: inline-block;
+}
+
+.soc-icon {
+    display: inline-block;
+}
+
+.soc-icon ul {
+    float: left;
+    padding: 0;
+    margin: 24px 0 0 0;
+}
+
+.soc-icon ul li {
+    float: left;
+    list-style-type: none;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    padding: 0;
+}
+
+.icon_fb {
+    background: url(images/social_icon.png) 0 0 no-repeat; /* не видит путь к файлу со спрайтом и вообще к любым картинкам */
+}
+
+.icon_goog {
+    background: url("images/social_icon.png") 20px 0 no-repeat;
+}
+
+.icon_tw {
+    background: url(images/social_icon.png) 40px 0 no-repeat;
+}
+
+#banner {
+    height: 350px;
+    background: url("images/bg_banner.jpg") no-repeat; /* не видит путь к файлу картинки для фона */
+    color: #c4c5c4; /* ПОМЕНЯТЬ ЦВЕ НА БЕЛЫЙ как появится картинка для фона */
+}
+
+#banner_div h2 {
+    margin: 0;
+    padding: 75px 0 0 0;
+    font-size: 36pt;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: left;
+}
+
+#banner_div h3 {
+    margin: 24px 440px 0 0;
+    padding: 0;
+    font-size: 23pt;
+    font-weight: normal;
+    text-align: left;
+    line-height: 1.5;
+}
+
+#banner_div {
+    position: relative;
+}
+
+#form {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    height: 538px;
+    width: 360px;
+    border-bottom: 4px solid #3498db;
+    background: white;
+
+}
+
+#forma_courses p {
+    text-transform: uppercase;
+    color: black;
+    font-size: 18pt;
+    text-align: center;
+    margin: 30px 0 19px 0;
+}
+
+#forma_courses input {
+    height: 36px;
+    width: 306px;
+    margin: 10px auto 0 20px;
+    padding: 0 0 0 13px;
+    background: #f2f2f2;
+    border: 1px solid #e6e6e6;
+}
+
+#forma_courses input::-webkit-input-placeholder {
+    color: black;
+    font-size: 10pt;
+    vertical-align: text-top;
+}
+
+#forma_courses input:-ms-input-placeholder {
+    color: black;
+    font-size: 10pt;
+    vertical-align: text-top;
+}
+
+/* как вставить справа стрелочку в первое поле  */
+#forma_sel_course {
+    margin: 0;
+    position: 0;
+
+}
+#forma_sel_course:after {
+    content: "⌵";
+    position: absolute;
+    cursor: pointer;
+    font-size: 25pt;
+    color: black;
+    margin: 3px 0 0 310px;
+}
+
+#textarea_address {
+    height: 74px !important;
+}
+
+#forma_submit {
+    height: 48px;
+    width: 220px;
+    margin: 25px auto 0 75px;
+    cursor: pointer;
+    color: white;
+    font-size: 18pt;
+    background: #e74c3c;
+    border: none;
+}
+
+#about {
+    height: 250px;
+    background: #f2f2f2;
+    color: black;
+}
+
+#about h4 {
+    margin: 0;
+    padding: 33px 0 0 0;
+    font-size: 12pt;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: left;
+}
+
+#about p {
+    margin: 22px 419px 0 0;
+    padding: 0;
+    font-size: 10pt;
+    font-weight: normal;
+    text-align: left;
+    line-height: 1.5;
+}
+
+#middle {
+    height: 532px;
+    background: white;
+}
+
+#middle_div {
+    height: 532px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#middle_div h3 {
+    text-transform: uppercase;
+    color: #3498db;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    padding: 38px 0 0 0;
+}
+
+#middle_block_colomns {
+    margin: 32px auto 0 auto;
+
+}
+
+.middle_colomn {
+    display: inline-block;
+    margin: 0 60px 0 0;
+    padding: 0 0;
+    width: 290px;
+    text-align: center;
+}
+
+.middle_colomn:last-child {
+    margin: 0;
+}
+
+.middle_colomn_img {
+    height: 158px;
+    margin: 0 auto;
+    -position: relative;
+}
+
+.col_img_left {
+    background: url("images/bg_img_left");
+}
+
+.col_img_mid {
+    background: url("images/bg_img_mid");
+}
+
+.col_img_right {
+    background: url("images/bg_img_right");
+}
+
+.middle_colomn h4 {
+    text-transform: uppercase;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 26px 0 0 0;
+    padding: 0;
+}
+
+.middle_colomn p {
+    color: black;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 20px 0 0 0;
+    padding: 0;
+    height: 122px;
+    overflow: hidden;
+}
+
+.middle_colomn_view {
+    position: relative;
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 48px;
+    width: 48px;
+    font-size: 14px;
+    top: 23px;
+    left: 118px;
+    margin: 0; /* почему не двигалось от левого края (и от верхнего) марджинами в диве и пробовала в а?
+    там двигалось только от верха/ Пришлось задавать релатив и двигать топом и лефтом */
+    padding: 0;
+}
+
+.colomn_view_a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#feedbacks {
+    height: 255px;
+    background: white;
+}
+
+#feedback_head h3{
+    text-transform: uppercase;
+    color: #3498db;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: left;
+    margin: 0;
+    padding: 40px 0 0 0;
+}
+
+footer {
+    background: #3498db;
+}
+
+.logo_foot {
+    height: 62px;
+    width: 62px;
+    font-size: 19px;
+}
