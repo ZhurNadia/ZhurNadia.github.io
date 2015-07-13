@@ -185,7 +185,7 @@ header {
 
 }
 #forma_sel_course:after {
-    content: "⌵";
+    content: "\2335";
     position: absolute;
     cursor: pointer;
     font-size: 25pt;
@@ -367,7 +367,7 @@ header {
 }
 
 #plea_div button:after {
-    content: "ᐳ";
+    content: "\1433";
     position: absolute;
     font-size: 16pt;
     color: white;
