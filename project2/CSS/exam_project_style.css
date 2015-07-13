@@ -1,9 +1,5 @@
-html, body {
-    width: 1920px;
-    margin: 0 auto;
-    font-family: Helvetica, Arial, sans-serif;
-}
-
+html,
+body,
 header,
 #banner,
 #about,
@@ -11,9 +7,9 @@ header,
 #feedbacks,
 #plea,
 footer {
-    width: 1920px;
     margin: 0 auto;
     padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #header,
@@ -39,32 +35,25 @@ header {
     margin: 12px 0 10px 0;
 }
 
-.logo {
-    border: 2px solid white;
-    border-radius: 50%;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.logo_head {
-    height: 48px;
-    width: 48px;
-    font-size: 15px;
-}
-
 .logo_a {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
+    font-size: 18px;
     margin: 0;
-    padding: 0;
+    padding: 13px 0 0 0;
+    display: block;
+    height: 35px;
+    width: 48px;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
 }
 
 .cmtt_head {
     float: left;
     text-transform: uppercase;
-    font-size: 19px;
+    font-size: 22px;
     margin: 29px 0 29px 14px;
 }
 
@@ -73,9 +62,10 @@ header {
 }
 
 .connect {
-    font-size: 10px;
-    margin: 33px 6px 0 0;
+    font-size: 12px;
     display: inline-block;
+    position: relative;
+    top: -6px;
 }
 
 .soc-icon {
@@ -85,50 +75,55 @@ header {
 .soc-icon ul {
     float: left;
     padding: 0;
-    margin: 24px 0 0 0;
+    margin: 28px 0 0 0;
 }
 
 .soc-icon ul li {
     float: left;
     list-style-type: none;
     cursor: pointer;
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
     margin: 0 2px;
     padding: 0;
+    transition: all 0.4s ease-in-out;
 }
 
 .icon_fb {
-    background: url(images/social_icon.png) 0 0 no-repeat; /* не видит путь к файлу со спрайтом и вообще к любым картинкам */
+    background: url(../images/facebook.svg) no-repeat;
 }
 
 .icon_goog {
-    background: url("images/social_icon.png") 20px 0 no-repeat;
+    background: url("../images/google-plus.svg") no-repeat;
 }
 
 .icon_tw {
-    background: url(images/social_icon.png) 40px 0 no-repeat;
+    background: url(../images/twitter.svg) no-repeat;
+}
+
+.icon_fb:hover,.icon_goog:hover,.icon_tw:hover {
+    transform: rotate(360deg);
 }
 
 #banner {
     height: 350px;
-    background: url("images/bg_banner.jpg") no-repeat; /* не видит путь к файлу картинки для фона */
-    color: #c4c5c4; /* ПОМЕНЯТЬ ЦВЕ НА БЕЛЫЙ как появится картинка для фона */
+    background: url("../images/bg_banner.jpg") no-repeat center center;
+    color: white;
 }
 
 #banner_div h2 {
     margin: 0;
-    padding: 75px 0 0 0;
-    font-size: 36pt;
+    padding: 70px 0 0 0;
+    font-size: 34pt;
     text-transform: uppercase;
     font-weight: normal;
     text-align: left;
 }
 
 #banner_div h3 {
-    margin: 24px 440px 0 0;
+    margin: 18px 440px 0 0;
     padding: 0;
-    font-size: 23pt;
+    font-size: 22pt;
     font-weight: normal;
     text-align: left;
     line-height: 1.5;
@@ -146,7 +141,6 @@ header {
     width: 360px;
     border-bottom: 4px solid #3498db;
     background: white;
-
 }
 
 #forma_courses p {
@@ -157,7 +151,7 @@ header {
     margin: 30px 0 19px 0;
 }
 
-#forma_courses input {
+#forma_courses input, #textarea_address {
     height: 36px;
     width: 306px;
     margin: 10px auto 0 20px;
@@ -166,24 +160,28 @@ header {
     border: 1px solid #e6e6e6;
 }
 
-#forma_courses input::-webkit-input-placeholder {
-    color: black;
-    font-size: 10pt;
-    vertical-align: text-top;
+#textarea_address {
+    height: 74px !important;
+    resize: none;
 }
 
-#forma_courses input:-ms-input-placeholder {
+#forma_courses input::-webkit-input-placeholder, #textarea_address::-webkit-input-placeholder {
     color: black;
     font-size: 10pt;
-    vertical-align: text-top;
 }
 
-/* как вставить справа стрелочку в первое поле  */
+#textarea_address::-webkit-input-placeholder {
+    padding: 9px 0 0 0;
+}
+
+#textarea_address:-ms-input-placeholder {
+    padding: 9px 0 0 0;
+}
+
 #forma_sel_course {
     margin: 0;
-    position: 0;
-
 }
+
 #forma_sel_course:after {
     content: "\2335";
     position: absolute;
@@ -191,10 +189,6 @@ header {
     font-size: 25pt;
     color: black;
     margin: 3px 0 0 310px;
-}
-
-#textarea_address {
-    height: 74px !important;
 }
 
 #forma_submit {
@@ -206,7 +200,13 @@ header {
     font-size: 18pt;
     background: #e74c3c;
     border: none;
+    transition: all 0.5s;
 }
+
+#forma_submit:hover {
+    background: #fa6c66;
+}
+
 
 #about {
     height: 250px;
@@ -272,19 +272,18 @@ header {
 .middle_colomn_img {
     height: 158px;
     margin: 0 auto;
-    -position: relative;
 }
 
 .col_img_left {
-    background: url("images/bg_img_left");
+    background: url("../images/bg_img_left.jpg") no-repeat;
 }
 
 .col_img_mid {
-    background: url("images/bg_img_mid");
+    background: url("../images/bg_img_mid.jpg") no-repeat;
 }
 
 .col_img_right {
-    background: url("images/bg_img_right");
+    background: url("../images/bg_img_right.jpg") no-repeat;
 }
 
 .middle_colomn h4 {
@@ -307,19 +306,7 @@ header {
 }
 
 .middle_colomn_view {
-    position: relative;
-    border: 1px solid #e6e6e6;
-    border-radius: 50%;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    height: 48px;
-    width: 48px;
-    font-size: 14px;
-    top: 23px;
-    left: 118px;
-    margin: 0; /* почему не двигалось от левого края (и от верхнего) марджинами в диве и пробовала в а?
-    там двигалось только от верха/ Пришлось задавать релатив и двигать топом и лефтом */
+    margin: 23px 0 0 118px;
     padding: 0;
 }
 
@@ -327,8 +314,22 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     color: black;
+    font-size: 14px;
     margin: 0;
-    padding: 0;
+    padding: 15px 0 0 0;
+    display: block;
+    height: 33px;
+    width: 48px;
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.colomn_view_a:hover {
+    color: white;
+    border: 1px solid #E74C3C;
+    background: #E74C3C;
 }
 
 #feedbacks {
@@ -385,7 +386,7 @@ header {
     position: absolute;
     bottom: 0;
     right: 0;
-    background: url("images/guy.png");
+    background: url("../images/guy.png");
     height: 364px;
     width: 225px;
 }
