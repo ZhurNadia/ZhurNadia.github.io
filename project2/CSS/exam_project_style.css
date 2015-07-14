@@ -35,16 +35,19 @@ header {
     margin: 12px 0 10px 0;
 }
 
+.logo_top {
+    font-size: 18px;
+    padding: 14px 0 0 0;
+    height: 34px;
+    width: 48px;
+}
+
 .logo_a {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    font-size: 18px;
     margin: 0;
-    padding: 13px 0 0 0;
     display: block;
-    height: 35px;
-    width: 48px;
     border: 2px solid white;
     border-radius: 50%;
     text-align: center;
@@ -102,7 +105,7 @@ header {
 }
 
 .icon_fb:hover,.icon_goog:hover,.icon_tw:hover {
-    transform: rotate(360deg);
+    transform: rotate(360deg);  /* Safari не крутятся иконки при наведении */
 }
 
 #banner {
@@ -156,42 +159,41 @@ header {
     width: 306px;
     margin: 10px auto 0 20px;
     padding: 0 0 0 13px;
+    font-size: 10pt;
+    color: black;
     background: #f2f2f2;
     border: 1px solid #e6e6e6;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #textarea_address {
     height: 74px !important;
+    padding: 10px 0 0 13px;
     resize: none;
 }
 
 #forma_courses input::-webkit-input-placeholder, #textarea_address::-webkit-input-placeholder {
     color: black;
     font-size: 10pt;
-}
-
-#textarea_address::-webkit-input-placeholder {
-    padding: 9px 0 0 0;
-}
-
-#textarea_address:-ms-input-placeholder {
-    padding: 9px 0 0 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 #forma_sel_course {
     margin: 0;
+    position: relative;
 }
 
 #forma_sel_course:after {
     content: "\2335";
     position: absolute;
     cursor: pointer;
-    font-size: 25pt;
+    font-size: 23pt;
     color: black;
-    margin: 3px 0 0 310px;
+    top: 1px; /* Firefox не корректно опускает стрелочку? гораздо выше прижата кверху */
+    margin: 5px 0 0 310px;
 }
 
-#forma_submit {
+#forma_submit { /* Safari и Opera кнопка съехала сильнее к низу а также отступ нижний после поля адреса больше*/
     height: 48px;
     width: 220px;
     margin: 25px auto 0 75px;
@@ -200,11 +202,10 @@ header {
     font-size: 18pt;
     background: #e74c3c;
     border: none;
-    transition: all 0.5s;
 }
 
 #forma_submit:hover {
-    background: #fa6c66;
+    box-shadow: 1px 1px 4px #6b1f13;
 }
 
 
@@ -239,7 +240,6 @@ header {
 
 #middle_div {
     height: 532px;
-    border-bottom: 1px solid #e6e6e6;
 }
 
 #middle_div h3 {
@@ -254,7 +254,6 @@ header {
 
 #middle_block_colomns {
     margin: 32px auto 0 auto;
-
 }
 
 .middle_colomn {
@@ -296,7 +295,7 @@ header {
 }
 
 .middle_colomn p {
-    color: black;
+    color: #333333;
     font-size: 14px;
     line-height: 1.5;
     margin: 20px 0 0 0;
@@ -316,9 +315,9 @@ header {
     color: black;
     font-size: 14px;
     margin: 0;
-    padding: 15px 0 0 0;
+    padding: 17px 0 0 0;
     display: block;
-    height: 33px;
+    height: 31px;
     width: 48px;
     border: 1px solid #e6e6e6;
     border-radius: 50%;
@@ -327,14 +326,16 @@ header {
 }
 
 .colomn_view_a:hover {
-    color: white;
-    border: 1px solid #E74C3C;
-    background: #E74C3C;
+    background: #f2f2f2;
 }
 
 #feedbacks {
     height: 255px;
     background: white;
+}
+
+#feedbacks_div {
+    border-top: 1px solid #e6e6e6;
 }
 
 #feedback_head h3{
@@ -345,8 +346,71 @@ header {
     text-align: left;
     margin: 0;
     padding: 40px 0 0 0;
+    float: left;
 }
 
+#arrow_feedback {
+    float: right;
+}
+
+.arrow_div {
+    display: inline-block;
+}
+
+.arrow_feed {
+    text-decoration: none;
+    color: #888888;
+    font-size: 18px;
+    margin: 30px 0 0 2px;
+    padding: 5px 0 0 0;
+    display: block;
+    height: 31px;
+    width: 36px;
+    border: 1px solid #e6e6e6;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.arrow_feed:hover {
+    background: #f2f2f2;
+    color: black;
+}
+
+blockquote {
+    width: 740px;
+    color: #333333;
+    font-size: 13px;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 124px 0 0 0;
+    position: relative;
+}
+
+blockquote span {
+    float: right;
+    text-transform: uppercase;
+    margin: 22px 0 0 0;
+}
+
+blockquote:before {
+    content: '\201C';
+    font-size: 55px;
+    color: #f2f2f2;
+    position: absolute;
+    margin: -50px 0 0 0;
+    padding: 0;
+}
+
+blockquote:after {
+    content: '\201D';
+    font-size: 55px;
+    color: #f2f2f2;
+    position: absolute;
+    right: 0;
+    margin: 30px 0 0 0;
+    padding: 0;
+}
 
 #plea {
     height: 189px;
@@ -365,21 +429,29 @@ header {
     margin: 67px 0 0 0;
     padding: 0;
     position: relative;
+    transition: width 0.9s ease-in-out;
 }
 
 #plea_div button:after {
     content: "\1433";
     position: absolute;
+    right: 17px;
     font-size: 16pt;
     color: white;
-    margin: -3px 0 0 19px;
+    margin: -3px 0 0 0;
     border: 3px solid white;
     border-radius: 50%;
     padding: 0 6px 0 7px;
+
+}
+
+#plea_div button:hover {
+    width: 585px;
 }
 
 #plea_div {
     position: relative;
+    height: 189px;
 }
 
 #img_guy {
@@ -394,10 +466,46 @@ header {
 footer {
     background: #3498db;
     height: 193px;
+    color: white;
 }
 
 .logo_foot {
-    height: 62px;
+    font-size: 22px;
+    padding: 18px 0 0 0;
+    height: 44px;
     width: 62px;
-    font-size: 19px;
+}
+
+.logo_foot_div {
+    float: left;
+    margin: 51px 0 0 0;
+}
+
+.cmtt-foot {
+    float: left;
+    text-transform: uppercase;
+    font-size: 22px;
+    width: 140px;
+    margin: 58px 0 29px 11px;
+    padding: 0 20px 5px 0;
+    border-right: 1px solid #2980b9;
+}
+
+.ic-foot ul {
+    margin: 0;
+    padding: 0;
+}
+
+#foot_right_div {
+    float: left;
+    margin: 60px 0 0 21px;
+}
+
+#foot_right_div p {
+    font-size: 13px;
+}
+
+#foot_right_div a {
+    text-decoration: none;
+    color: white;
 }
