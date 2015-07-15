@@ -89,6 +89,9 @@ header {
     width: 22px;
     margin: 0 2px;
     padding: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 
@@ -105,7 +108,11 @@ header {
 }
 
 .icon_fb:hover,.icon_goog:hover,.icon_tw:hover {
-    transform: rotate(360deg);  /* Safari не крутятся иконки при наведении */
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 #banner {
@@ -148,10 +155,10 @@ header {
 
 #forma_courses p {
     text-transform: uppercase;
-    color: black;
-    font-size: 18pt;
+    color: #333333;
+    font-size: 24px;
     text-align: center;
-    margin: 30px 0 19px 0;
+    margin: 26px 0 13px 0;
 }
 
 #forma_courses input, #textarea_address {
@@ -159,24 +166,26 @@ header {
     width: 306px;
     margin: 10px auto 0 20px;
     padding: 0 0 0 13px;
-    font-size: 10pt;
-    color: black;
+    font-size: 15px;
+    color: #333333;
     background: #f2f2f2;
     border: 1px solid #e6e6e6;
     font-family: Helvetica, Arial, sans-serif;
 }
 
 #textarea_address {
-    height: 74px !important;
+    height: 66px !important;
     padding: 10px 0 0 13px;
+    margin: 10px 0 -4px 20px;
     resize: none;
 }
 
 #forma_courses input::-webkit-input-placeholder, #textarea_address::-webkit-input-placeholder {
-    color: black;
-    font-size: 10pt;
+    color: #333333;
+    font-size: 15px;
     font-family: Helvetica, Arial, sans-serif;
 }
+
 
 #forma_sel_course {
     margin: 0;
@@ -187,19 +196,21 @@ header {
     content: "\2335";
     position: absolute;
     cursor: pointer;
-    font-size: 23pt;
-    color: black;
-    top: 1px; /* Firefox не корректно опускает стрелочку? гораздо выше прижата кверху */
-    margin: 5px 0 0 310px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    line-height: 1;
+    color: #333333;
+    top: 1px;
+    margin: 15px 0 0 310px;
 }
 
-#forma_submit { /* Safari и Opera кнопка съехала сильнее к низу а также отступ нижний после поля адреса больше*/
+#forma_submit {
     height: 48px;
     width: 220px;
     margin: 25px auto 0 75px;
     cursor: pointer;
     color: white;
-    font-size: 18pt;
+    font-size: 24px;
     background: #e74c3c;
     border: none;
 }
@@ -212,7 +223,7 @@ header {
 #about {
     height: 250px;
     background: #f2f2f2;
-    color: black;
+    color: #333333;
 }
 
 #about h4 {
@@ -287,7 +298,7 @@ header {
 
 .middle_colomn h4 {
     text-transform: uppercase;
-    color: black;
+    color: #333333;
     font-size: 15px;
     font-weight: bold;
     margin: 26px 0 0 0;
@@ -312,7 +323,7 @@ header {
 .colomn_view_a {
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: #333333;
     font-size: 14px;
     margin: 0;
     padding: 17px 0 0 0;
