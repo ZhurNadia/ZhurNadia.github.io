@@ -1,6 +1,193 @@
 /* responsive for tablet */
-@-m-edia (max-width: 1000px), (min-width: 800px) {
+@media (max-width: 1000px), (min-width: 800px) {
+    html,
+    body,
+    header,
+    #banner,
+    #about,
+    #middle,
+    #feedbacks,
+    #plea,
+    footer {
+        width: 800px;
+        margin: 0 auto;
+        padding: 0;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    #header,
+    #banner_div,
+    #about_div,
+    #middle_div,
+    #feedbacks_div,
+    #plea_div,
+    #footer {
+        width: 758px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    header {
+        height: 81px;
+    }
+
+    #banner {
+        height: 352px;
+    }
+
+    #banner_div h2 {
+        margin: -1px 0 0 0;
+        padding: 91px 0 0 0;
+        font-size: 46px;
+    }
+
+    #banner_div h3 {
+        margin: 25px 380px 0 0;
+        padding: 0;
+        font-size: 23px;
+    }
+
+    #form {
+        top: 32px;
+        width: 340px;
+    }
+
+    #forma_courses input, #textarea_address {
+        width: 285px;
+    }
+
+    #forma_sel_course:after {
+        margin: 15px 0 0 292px;
+    }
+
+    #about h4 {
+        padding: 28px 0 0 0;
+    }
+
+    #about p {
+        margin: 22px 371px 0 0;
+    }
+
+    #middle {
+        height: 715px;
+    }
+
+    #middle_div {
+        height: 715px;
+    }
+
+    #middle_div h3 {
+        font-size: 20px;
+        padding: 40px 0 0 0;
+    }
 
 
+    .middle_colomn {
+        display: block;
+        width: 758px;
+        text-align: left;
+        position: relative;
+    }
+
+    .middle_colomn_img {
+        position: relative;
+        left: 0;
+        margin: 0 0 55px 0;
+    }
+
+    .mid_col_text {
+        position: absolute;
+        top: 0;
+        left: 310px;
+        margin: 0;
+    }
+
+    .middle_colomn h4 {
+        margin: 0;
+    }
+
+    .middle_colomn p {
+        margin: 22px 0 0 0;
+        height: 78px;
+    }
+
+    .middle_colomn_view {
+        margin: 16px 0 0 0;
+    }
+
+    #feedbacks {
+        height: 255px;
+        background: white;
+    }
+
+    #feedbacks_div {
+        border-top: 1px solid #e6e6e6;
+    }
+
+    #feedback_head h3{
+        font-size: 20px;
+        padding: 43px 0 0 0;
+    }
+
+    blockquote {
+        width: 537px;
+        text-align: left;
+        margin: 122px 0 0 0;
+    }
+
+    blockquote span {
+        margin: 6px 0 0 0;
+    }
+
+    blockquote:after {
+        margin: 20px 0 0 0;
+    }
+
+    #plea_div button {
+        width: 470px;
+        font-size: 20px;
+    }
+
+    #plea_div button:after {
+        right: 15px;
+        font-size: 16pt;
+        margin: -6px 0 0 0;
+    }
+
+    #plea_div button:hover {
+        width: 540px;
+    }
+
+    footer {
+        height: 196px;
+    }
+
+    .logo_foot_div {
+        float: left;
+        margin: 47px 0 0 0;
+    }
+
+    .ic-foot {
+        width: 470px;
+    }
+
+    .ic-foot ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    #foot_right_div {
+        margin: 55px 0 0 21px;
+        width: 470px;
+    }
+
+    #foot_right_div p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .soc-icon ul {
+        margin: 0;
+    }
 
 }
