@@ -1,0 +1,137 @@
+/* responsive for mobile */
+@media (max-width: 799px), (min-width: 320px) {
+
+    html,
+    body,
+    header,
+    #banner,
+    #about,
+    #middle,
+    #feedbacks,
+    #plea,
+    footer,
+    #header,
+    #banner_div,
+    #about_div,
+    #middle_div,
+    #feedbacks_div,
+    #plea_div,
+    #footer {
+        width: 320px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    header {
+        height: 160px;
+    }
+
+    #logo_head_div {
+        float: none;
+        display: block;
+        font-size: 20px;
+        position: absolute;
+        margin: 16px 0 0 135px;
+    }
+
+    .cmtt_head {
+        float: none;
+        width: 170px;
+        font-size: 20px;
+        margin: 0 0 0 78px;
+        padding: 80px 0 10px 2px;
+        border-bottom: 1px solid #2980b9;
+    }
+
+    .ic-head {
+        float: none;
+        margin-left: 90px;
+    }
+
+    .soc-icon ul {
+        margin: 10px 0 0 0;
+    }
+
+    #banner {
+        height: 352px;
+    }
+
+    #banner_div h2 {
+        margin-top: -1px;
+        padding-top: 33px;
+        font-size: 38px;
+        text-align: center;
+    }
+
+    #banner_div h3 {
+        margin: 13px 36px 0 45px;
+        padding: 0;
+        font-size: 15px;
+        text-align: center;
+        line-height: 1.7;
+    }
+
+    #form {
+        top: 199px;
+        width: 299px;
+        left: 10px;
+    }
+
+    #forma_courses input, #textarea_address {
+        width: 247px;
+    }
+
+    #forma_sel_course:after {
+        margin: 15px 0 0 260px;
+    }
+
+    #forma_courses p {
+        font-size: 20px;
+        margin: 31px 0 17px 0;
+    }
+
+    #forma_submit {
+        width: 199px;
+        margin: 25px auto 0 51px;
+    }
+
+    #about {
+        height: 678px;
+    }
+
+    #about h4 {
+        padding: 416px 0 0 0;
+        text-align: center;
+    }
+
+    #about p {
+        margin: 22px 24px 0 24px;
+        text-align: center;
+    }
+
+    #middle {
+        height: 1424px;
+    }
+
+    #middle_div h3 {
+        text-align: center;
+        margin: 0;
+        padding: 32px 0 0 0;
+    }
+
+    #feedbacks {
+        height: 505px;
+    }
+
+    #plea, #plea_div {
+        height: 240px;
+    }
+
+
+
+    footer {
+        height: 312px;
+    }
+
+
+}

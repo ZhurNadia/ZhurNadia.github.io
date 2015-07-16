@@ -1,5 +1,5 @@
 /* responsive for tablet */
-@media (max-width: 1000px), (min-width: 800px) {
+@media (max-width: 999px) and (min-width: 800px) {
     html,
     body,
     header,
@@ -29,6 +29,10 @@
 
     header {
         height: 81px;
+    }
+
+    .soc-icon ul {
+        padding: 25px 0 0 0;
     }
 
     #banner {
@@ -164,7 +168,7 @@
 
     .logo_foot_div {
         float: left;
-        margin: 47px 0 0 0;
+        margin: 48px 0 0 0;
     }
 
     .ic-foot {
