@@ -193,15 +193,15 @@ header {
 }
 
 #forma_sel_course:after {
-    content: "\2335";
+    content: url("../images/strelka_down.png");
     position: absolute;
     cursor: pointer;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 28px;
     line-height: 1;
     color: #333333;
-    top: 1px;
-    margin: 15px 0 0 310px;
+    top: -3px;
+    margin: 12px 0 0 310px;
 }
 
 #forma_submit {
@@ -383,9 +383,20 @@ header {
     transition: all 0.3s;
 }
 
-.arrow_feed_a:hover {
-    background: #f2f2f2;
-    color: black;
+._a2 {
+    background: url("../images/strelka_toright_notactive.png") 14px 9px no-repeat;
+}
+
+._a1 {
+    background: url("../images/strelka_toleft_notactive.png") 11px 9px no-repeat;
+}
+
+._a2:hover {
+    background: url("../images/strelka_toright_active.png") 14px 9px no-repeat, #f2f2f2;
+}
+
+._a1:hover {
+    background: url("../images/strelka_toleft_active.png") 11px 9px no-repeat, #f2f2f2;
 }
 
 blockquote {
@@ -441,11 +452,10 @@ blockquote:after {
     margin: 67px 0 0 0;
     padding: 0;
     position: relative;
-    transition: width 0.9s ease-in-out;
 }
 
 #plea_div button:after {
-    content: "\1433";
+    content: url("../images/strelka_toright_button.png");
     position: absolute;
     right: 17px;
     font-size: 16pt;
@@ -453,12 +463,12 @@ blockquote:after {
     margin: -3px 0 0 0;
     border: 2px solid white;
     border-radius: 50%;
-    padding: 0 6px 0 7px;
+    padding: 0 7px 0 7px;
 
 }
 
 #plea_div button:hover {
-    width: 585px;
+    box-shadow: 1px 1px 4px #6b1f13;
 }
 
 #plea_div {

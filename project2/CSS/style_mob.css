@@ -169,12 +169,6 @@
         height: 240px;
     }
 
-    #plea_div button p {
-        position: relative;
-        top: -18px;
-        margin: 0 40px 0 51px;
-    }
-
     #plea_div button {
         width: 93.75%;
         height: 54.167%;
@@ -182,20 +176,15 @@
         vertical-align: text-top;
         margin: 19% 0 0 3.125%;
         line-height: 1.5;
+        padding: 0 40px 45px 55px;
         z-index: 15;
-        transition: height 0.9s ease-in-out;
     }
 
     #plea_div button:after {
         right: 42%;
         font-size: 16pt;
         line-height: normal;
-        margin: -14px 0 0 0;
-    }
-
-    #plea_div button:hover {
-        width: 93.75%;
-        height: 70%;
+        margin: 35px 0 0 0;
     }
 
     #img_guy {
@@ -210,7 +199,7 @@
     .logo_foot_div {
         float: none;
         width: 100%;
-        margin-left: 128px;
+        margin: 0 0 0 128px;
         padding-top: 31px;
     }
 
@@ -232,7 +221,6 @@
         width: 53.125%;  /* 170/320  */
     }
 
-
     .ic-foot ul {
         margin: 0;
         padding: 0;
@@ -240,7 +228,7 @@
 
     #foot_right_div {
         float: none;
-        margin: 10px 0 0 0 ;
+        margin: 10px 0 0 0;
     }
 
     .ic-foot {
@@ -250,6 +238,7 @@
     #foot_right_div p {
         margin: 42px 40px 0 40px;
         text-align: center;
+        line-height: 1.8;
     }
 
 }
