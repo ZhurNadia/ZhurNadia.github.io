@@ -368,7 +368,7 @@ header {
     display: inline-block;
 }
 
-.arrow_feed {
+.arrow_feed_a {
     text-decoration: none;
     color: #888888;
     font-size: 18px;
@@ -383,7 +383,7 @@ header {
     transition: all 0.3s;
 }
 
-.arrow_feed:hover {
+.arrow_feed_a:hover {
     background: #f2f2f2;
     color: black;
 }
@@ -401,6 +401,7 @@ blockquote {
 blockquote span {
     float: right;
     text-transform: uppercase;
+    font-weight: bold;
     margin: 22px 0 0 0;
 }
 
@@ -450,7 +451,7 @@ blockquote:after {
     font-size: 16pt;
     color: white;
     margin: -3px 0 0 0;
-    border: 3px solid white;
+    border: 2px solid white;
     border-radius: 50%;
     padding: 0 6px 0 7px;
 

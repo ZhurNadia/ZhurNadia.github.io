@@ -119,19 +119,137 @@
         padding: 32px 0 0 0;
     }
 
+    .middle_colomn {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .middle_colomn_view {
+        margin: 23px 0 30px 40.69%;
+    }
+
     #feedbacks {
         height: 505px;
+    }
+
+    #feedback_head h3 {
+        width: 76.25%; /* от общей ширины 320px*/
+        font-size: 19px;
+        line-height: 1.5;
+        text-align: center;
+        margin: 0 11.875%; /* отступы по бокам для отцентровки от ширины 320px*/
+        padding-top: 8.53%;
+    }
+
+    blockquote {
+        width: 82%;
+        text-align: left;
+        line-height: 1.5;
+        margin: 50px 13.75% 0 6.25%;
+    }
+
+    blockquote span {
+        margin: 6px -23px 0 0;
+    }
+
+    blockquote:after {
+        margin: 14px -23px 0 0;
+    }
+
+    #arrow_feedback {
+        float: none;
+        margin: 0 36.8%;
+    }
+
+    .arrow_feed_a {
+        margin: 18px 0 0 2px;
     }
 
     #plea, #plea_div {
         height: 240px;
     }
 
+    #plea_div button p {
+        position: relative;
+        top: -18px;
+        margin: 0 40px 0 51px;
+    }
 
+    #plea_div button {
+        width: 93.75%;
+        height: 54.167%;
+        font-size: 20px;
+        vertical-align: text-top;
+        margin: 19% 0 0 3.125%;
+        line-height: 1.5;
+        z-index: 15;
+        transition: height 0.9s ease-in-out;
+    }
+
+    #plea_div button:after {
+        right: 42%;
+        font-size: 16pt;
+        line-height: normal;
+        margin: -14px 0 0 0;
+    }
+
+    #plea_div button:hover {
+        width: 93.75%;
+        height: 70%;
+    }
+
+    #img_guy {
+        right: 15.31%;
+        z-index: 1;
+    }
 
     footer {
         height: 312px;
     }
 
+    .logo_foot_div {
+        float: none;
+        width: 100%;
+        margin-left: 128px;
+        padding-top: 31px;
+    }
+
+    .logo_foot {
+        font-size: 19px;
+        padding: 14px 0 0 0;
+        height: 34px;
+        width: 48px;
+    }
+
+    .cmtt-foot {
+        float: none;
+        font-size: 18px;
+        text-align: center;
+        padding: 0 0 9px 0;
+        margin: 10px 0 0 77px;
+        border-right: none;
+        border-bottom: 1px solid #2980b9;
+        width: 53.125%;  /* 170/320  */
+    }
+
+
+    .ic-foot ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    #foot_right_div {
+        float: none;
+        margin: 10px 0 0 0 ;
+    }
+
+    .ic-foot {
+        margin-left: 90px;
+    }
+
+    #foot_right_div p {
+        margin: 42px 40px 0 40px;
+        text-align: center;
+    }
 
 }
