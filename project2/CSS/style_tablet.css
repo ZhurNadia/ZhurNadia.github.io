@@ -158,10 +158,6 @@
         margin: -6px 0 0 0;
     }
 
-    #plea_div button:hover {
-        width: 540px;
-    }
-
     footer {
         height: 196px;
     }
@@ -188,6 +184,7 @@
     #foot_right_div p {
         margin: 0;
         padding: 0;
+        line-height: 1.5;
     }
 
     .soc-icon ul {
