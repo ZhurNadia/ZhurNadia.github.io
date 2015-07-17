@@ -1,5 +1,5 @@
 /* responsive for mobile */
-@media (max-width: 799px) and (min-width: 320px) {
+@media screen and (max-width: 799px) and (min-width: 320px) and (orientation : portrait) {
 
     html,
     body,
