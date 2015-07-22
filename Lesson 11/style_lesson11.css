@@ -1,0 +1,134 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+body {
+    background: #f6f9f9;
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #2e3a4f;
+    text-align: center;
+    font-size: 41px;
+    margin: 58px auto 0 auto;
+    padding: 0;
+}
+
+h3 {
+    color: #909090;
+    text-align: center;
+    font-size: 15px;
+    margin: 20px auto 0 auto;
+    padding: 0;
+}
+
+#main_block {
+    max-width: 1165px;
+    width: 100%;
+    min-height: 576px;
+    height: 100%;
+    margin: 80px auto auto auto;
+    -text-align: center;
+}
+
+.photo {
+    display: inline-block;
+    height: 260px;
+    width: 360px;
+    border-radius: 1%;
+    margin: 0 25px 25px 0;
+    transition: background 0.2s ease-in-out;
+}
+
+.ph1 {
+    background: url("img/pic_1.jpg") center no-repeat;
+}
+
+.ph2 {
+    background: url("img/pic_2.jpg") center no-repeat;
+}
+
+.ph3 {
+    background: url("img/pic_3.jpg") center no-repeat;
+}
+
+.ph4 {
+    background: url("img/pic_4.jpg") center no-repeat;
+}
+
+.ph5 {
+    background: url("img/pic_5.jpg") center no-repeat;
+}
+
+.ph6 {
+    background: url("img/pic_6.jpg") center no-repeat;
+}
+
+.photo:hover .hover1,
+.photo:hover .hover2,
+.photo:hover .hover3,
+.photo:hover .hover4,
+.photo:hover .hover5,
+.photo:hover .hover6 {
+    background: rgba(57, 174, 247, 0.8);
+}
+
+.hover1:before,
+.hover2:before,
+.hover3:before,
+.hover4:before,
+.hover5:before,
+.hover6:before,
+.hover1:after,
+.hover2:after,
+.hover3:after,
+.hover4:after,
+.hover5:after,
+.hover6:after {
+    text-align: center;
+    line-height: 2.6;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+    position: absolute;
+    visibility: hidden;
+    transition: background 0.2s ease-in-out;
+}
+.hover1:before,
+.hover2:before,
+.hover3:before,
+.hover4:before,
+.hover5:before,
+.hover6:before {
+    content: url("img/icons/Icon_zoom.png");
+    margin: 108px 0 0 133px;
+}
+
+.hover1:after,
+.hover2:after,
+.hover3:after,
+.hover4:after,
+.hover5:after,
+.hover6:after {
+    content: url("img/icons/Icon_link.png");
+    margin: 108px 0 0 182px;
+}
+
+.hover1:hover:before,
+.hover2:hover:before,
+.hover3:hover:before,
+.hover4:hover:before,
+.hover5:hover:before,
+.hover6:hover:before,
+.hover1:hover:after,
+.hover2:hover:after,
+.hover3:hover:after,
+.hover4:hover:after,
+.hover5:hover:after,
+.hover6:hover:after {
+    visibility: visible;
+    -background: rgba(37, 166, 247, 0.5);
+}
