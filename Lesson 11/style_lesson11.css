@@ -29,7 +29,6 @@ h3 {
     min-height: 576px;
     height: 100%;
     margin: 80px auto auto auto;
-    -text-align: center;
 }
 
 .photo {
@@ -74,13 +73,82 @@ h3 {
     background: rgba(57, 174, 247, 0.8);
 }
 
-.hover1:before,
+#background_for_zoom_photo {
+    display: none;
+    height: 900px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    margin: -58px auto 0 auto;
+    z-index: 5;
+}
+
+.zoom_photo1 {
+    display: none;
+    width: 1140px;
+    height: 552px;
+    background: url("img/pic_1_zoom.jpg") center no-repeat;
+    border: 3px solid #999999;
+    position: absolute;
+    margin: 80px auto auto 48px;
+    z-index: 10;
+}
+
+.close_zoom {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-top: -20px;
+    right: 16px;
+    background: #f74c26;
+    border: none;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    z-index: 12;
+}
+
+.zoom_hover, .link_hover {
+    text-align: center;
+    line-height: 2.6;
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+    position: absolute;
+    visibility: hidden;
+    transition: background 0.2s ease-in-out;
+}
+
+.zoom_hover {
+    margin: -180px 0 0 133px; /* почему-то эти кнопочки зум и линк для первой картинки появились в картинке под первой (в четвертой)?*/
+}
+
+.link_hover {
+    margin: -180px 0 0 182px;
+}
+
+.zoom_hover:hover, .link_hover:hover {
+    background: rgba(37, 166, 247, 0.5);
+}
+
+.photo:hover .zoom_hover, .photo:hover .link_hover {
+    visibility: visible;
+}
+
+/* как отобразить увеличенную картинку при нажатии по кнопочке zoom? использовать какой-то псевдокласс? */
+.zoom_hover:active .close_zoom, .zoom_hover:active .zoom_photo1, .zoom_hover:active #background_for_zoom_photo {
+    visibility: visible;
+}
+
+
 .hover2:before,
 .hover3:before,
 .hover4:before,
 .hover5:before,
 .hover6:before,
-.hover1:after,
 .hover2:after,
 .hover3:after,
 .hover4:after,
@@ -97,7 +165,8 @@ h3 {
     visibility: hidden;
     transition: background 0.2s ease-in-out;
 }
-.hover1:before,
+
+
 .hover2:before,
 .hover3:before,
 .hover4:before,
@@ -107,7 +176,7 @@ h3 {
     margin: 108px 0 0 133px;
 }
 
-.hover1:after,
+
 .hover2:after,
 .hover3:after,
 .hover4:after,
@@ -117,7 +186,6 @@ h3 {
     margin: 108px 0 0 182px;
 }
 
-.hover1:hover:before,
 .hover2:hover:before,
 .hover3:hover:before,
 .hover4:hover:before,
@@ -130,5 +198,4 @@ h3 {
 .hover5:hover:after,
 .hover6:hover:after {
     visibility: visible;
-    -background: rgba(37, 166, 247, 0.5);
 }
