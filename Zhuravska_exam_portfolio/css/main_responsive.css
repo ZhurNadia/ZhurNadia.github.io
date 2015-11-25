@@ -895,24 +895,14 @@ a{
     .collection a.work_title{
     	width: 100%;
     }
-    
+   
     .features .feature{
         width: 100%;
-        margin-right: 0!important;
+        margin-right: 6%!important;
     }
-
     footer .logo2{
         width: 50%;
         height: 50%;
-    }
-    
-    .features .feature{
-        width: 46.66666666666667%;
-        margin-right: 6.666666666666667%!important;
-    }
-
-    .features .feature:nth-child(2n+2) {
-        margin-right: 0!important;
     }
 
     footer .logo2{
