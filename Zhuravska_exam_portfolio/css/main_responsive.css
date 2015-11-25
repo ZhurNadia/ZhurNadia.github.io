@@ -824,6 +824,16 @@ a{
         margin-right: 6%!important;
     }
     
+    .feature .ficon {
+	width: 11%;
+	margin: 0 5%;
+    }
+    
+    .ficon img{
+    	width:120%;
+    	height:120%;
+    }
+    
     .collection .work {
         float: none;
         display: inline;
@@ -905,6 +915,17 @@ a{
         width: 100%;
         margin-right: 6%!important;
     }
+    
+    .feature .ficon {
+	width: 11%;
+	margin: 0 5%;
+    }
+    
+    .ficon img{
+    	width:120%;
+    	height:120%;
+    }
+    
     footer .logo2{
         width: 50%;
         height: 50%;
