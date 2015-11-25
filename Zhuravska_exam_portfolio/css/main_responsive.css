@@ -880,6 +880,11 @@ a{
         padding: 20px 0;
     }
 
+    .collection .work {
+        float: none;
+        display: inline;
+    }
+    
     .features .feature{
         width: 46.66666666666667%;
         margin-right: 6.666666666666667%!important;
@@ -897,7 +902,11 @@ a{
 
 
 @media (max-width:500px){
-
+    .collection .work {
+        float: none;
+        display: inline;
+    } 
+    
     .features .feature{
         width: 100%;
         margin-right: 0!important;
