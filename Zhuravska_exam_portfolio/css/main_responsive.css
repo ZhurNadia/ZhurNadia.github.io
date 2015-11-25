@@ -919,4 +919,8 @@ a{
         width: 50%;
         height: 50%;
     }
+    
+    .soc_icon{
+    	margin-right: 25px;
+    }
 }
