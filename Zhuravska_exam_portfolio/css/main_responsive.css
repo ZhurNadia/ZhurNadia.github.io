@@ -794,6 +794,10 @@ a{
         float: none;
         display: inline;
     }
+    
+    .collection a.work_title{
+    	width: 100%;
+    }
 }
 
 
@@ -818,6 +822,10 @@ a{
     .collection .work {
         float: none;
         display: inline;
+    }
+    
+    .collection a.work_title{
+    	width: 100%;
     }
 }
 
@@ -852,7 +860,6 @@ a{
         text-align: center;
         position: relative;
         z-index: 8000;
-        /* display: none; */
     }
 
     header nav{
@@ -883,6 +890,10 @@ a{
     .collection .work {
         float: none;
         display: inline;
+    }
+    
+    .collection a.work_title{
+    	width: 100%;
     }
     
     .features .feature{
