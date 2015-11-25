@@ -819,6 +819,11 @@ a{
         border-left: none;
     }
     
+    .features .feature{
+        width: 100%;
+        margin-right: 6%!important;
+    }
+    
     .collection .work {
         float: none;
         display: inline;
